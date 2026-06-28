@@ -246,11 +246,9 @@ def main() -> None:
 
     # Handle simple utility commands first
     if args.stats:
-        from config import get_settings
-        from services.storage import Storage
         setup_logger()
-        settings = get_settings()
-        storage = Storage(settings.data_dir)
+        _settings = get_settings()
+        storage = Storage(_settings.data_dir)
         summary = storage.get_history_summary()
         print(f"\n{'='*40}")
         print(f"  Repo Of The Day — History Stats")
@@ -265,11 +263,9 @@ def main() -> None:
         sys.exit(0)
 
     if args.clear_cache:
-        from config import get_settings
-        from services.storage import Storage
         setup_logger()
-        settings = get_settings()
-        Storage(settings.data_dir).clear_cache()
+        _settings = get_settings()
+        Storage(_settings.data_dir).clear_cache()
         print("Cache cleared.")
         sys.exit(0)
 
