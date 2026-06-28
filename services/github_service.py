@@ -9,15 +9,14 @@ Sources (in priority order):
 """
 from __future__ import annotations
 
-import re
+import base64
 import time
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
-import httpx
 import requests
 from bs4 import BeautifulSoup
-from github import Github, GithubException, RateLimitExceededException
+from github import Github, RateLimitExceededException
 
 from services.logger import logger
 from services.utils import retry
@@ -36,11 +35,36 @@ class RawRepo:
         "readme_content", "latest_release", "source",
     )
 
+    # Slot type annotations so type checkers can resolve attribute types
+    full_name: str | None
+    name: str | None
+    owner: str | None
+    description: str | None
+    url: str | None
+    homepage: str | None
+    topics: list[str] | None
+    language: str | None
+    license: str | None
+    stars: int | None
+    forks: int | None
+    watchers: int | None
+    open_issues: int | None
+    contributors_count: int | None
+    created_at: str | None
+    updated_at: str | None
+    pushed_at: str | None
+    default_branch: str | None
+    is_archived: bool | None
+    is_fork: bool | None
+    readme_content: str | None
+    latest_release: str | None
+    source: str | None
+
     def __init__(self, **kwargs: Any) -> None:
         for slot in self.__slots__:
             setattr(self, slot, kwargs.get(slot))
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> dict[str, Any]:
         return {s: getattr(self, s) for s in self.__slots__}
 
 
@@ -68,7 +92,7 @@ class GitHubService:
     ]
 
     def __init__(self, token: str, timeout: int = 30) -> None:
-        self._gh = Github(token)
+        self._gh: Any = Github(token)
         self._token = token
         self._timeout = timeout
         self._headers = {
@@ -140,7 +164,7 @@ class GitHubService:
                 link = article.select_one("h2 a")
                 if not link:
                     continue
-                full_name = link["href"].lstrip("/")
+                full_name = str(link.get("href") or "").lstrip("/")
                 if "/" not in full_name:
                     continue
 
@@ -295,7 +319,6 @@ class GitHubService:
         try:
             repo = self._gh.get_repo(full_name)
             readme = repo.get_readme()
-            import base64
             return base64.b64decode(readme.content).decode("utf-8", errors="replace")
         except Exception as exc:
             logger.debug("README fetch failed for {}: {}", full_name, exc)
@@ -310,7 +333,7 @@ class GitHubService:
         except Exception:
             return None
 
-    def get_rate_limit(self) -> dict:
+    def get_rate_limit(self) -> dict[str, Any]:
         try:
             rl = self._gh.get_rate_limit()
             return {

@@ -10,6 +10,7 @@ Features:
 """
 from __future__ import annotations
 
+import re
 import time
 from pathlib import Path
 from typing import Any
@@ -41,12 +42,12 @@ class TelegramService:
         image_path: str,
         messages: list[str],
         caption: str = "",
-    ) -> list[dict]:
+    ) -> list[dict[str, Any]]:
         """
         Post the thumbnail first (with a short caption), then send all
         text message chunks as follow-up messages.
         """
-        results: list[dict] = []
+        results: list[dict[str, Any]] = []
 
         # 1. Send photo
         short_caption = (caption or "🚀 Repo Of The Day")[:MAX_CAPTION_LEN]
@@ -64,7 +65,7 @@ class TelegramService:
 
         return results
 
-    def send_text_only(self, messages: list[str]) -> list[dict]:
+    def send_text_only(self, messages: list[str]) -> list[dict[str, Any]]:
         """Send text messages without a photo (fallback or dry-run check)."""
         results = []
         for i, chunk in enumerate(messages, 1):
@@ -93,7 +94,7 @@ class TelegramService:
     # ── Internal ───────────────────────────────────────────────────────────
 
     @retry(max_attempts=5, delay=3.0, backoff=2.0, exceptions=(Exception,))
-    def _send_message(self, text: str) -> dict:
+    def _send_message(self, text: str) -> dict[str, Any]:
         url = TELEGRAM_API.format(token=self._token, method="sendMessage")
         payload = {
             "chat_id": self._chat_id,
@@ -120,10 +121,8 @@ class TelegramService:
         logger.debug("Message sent: message_id={}", data["result"].get("message_id"))
         return data["result"]
 
-    def _send_plain(self, text: str) -> dict:
+    def _send_plain(self, text: str) -> dict[str, Any]:
         """Fallback: send message without parse mode."""
-        # Strip all markdown formatting characters
-        import re
         plain = re.sub(r"[*_`\[\]()~>#+\-=|{}!\\]", "", text)
         url = TELEGRAM_API.format(token=self._token, method="sendMessage")
         payload = {"chat_id": self._chat_id, "text": plain[:MAX_MESSAGE_LEN]}
@@ -131,7 +130,7 @@ class TelegramService:
         return resp.json().get("result", {})
 
     @retry(max_attempts=5, delay=3.0, backoff=2.0, exceptions=(Exception,))
-    def _send_photo(self, image_path: str, caption: str) -> dict:
+    def _send_photo(self, image_path: str, caption: str) -> dict[str, Any]:
         url = TELEGRAM_API.format(token=self._token, method="sendPhoto")
         path = Path(image_path)
         if not path.exists():
@@ -158,7 +157,26 @@ class TelegramService:
                 retry_after = data.get("parameters", {}).get("retry_after", 30)
                 time.sleep(retry_after)
                 raise RuntimeError(f"Rate limited (retry after {retry_after}s)")
+            if error_code == 400 and "can't parse" in desc.lower():
+                logger.warning("MarkdownV2 parse error in caption — retrying without parse_mode")
+                return self._send_photo_plain(image_path, caption)
             raise RuntimeError(f"Photo send error {error_code}: {desc}")
 
         logger.info("Photo sent: message_id={}", data["result"].get("message_id"))
         return data["result"]
+
+    def _send_photo_plain(self, image_path: str, caption: str) -> dict[str, Any]:
+        """Fallback: send photo with plain caption (no MarkdownV2)."""
+        plain_caption = re.sub(r"[*_`\[\]()~>#+\-=|{}.!\\]", "", caption)
+        url = TELEGRAM_API.format(token=self._token, method="sendPhoto")
+        path = Path(image_path)
+        with open(path, "rb") as f:
+            resp = self._session.post(
+                url,
+                data={"chat_id": self._chat_id, "caption": plain_caption[:MAX_CAPTION_LEN]},
+                files={"photo": (path.name, f, "image/png")},
+                timeout=self._timeout * 2,
+            )
+        data = resp.json()
+        logger.info("Photo sent (plain): message_id={}", data.get("result", {}).get("message_id"))
+        return data.get("result", {})

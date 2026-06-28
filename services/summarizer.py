@@ -12,14 +12,13 @@ from __future__ import annotations
 import re
 import string
 from collections import Counter
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 import nltk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sumy.nlp.stemmers import Stemmer
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.parsers.plaintext import PlaintextParser
-from sumy.summarizers.lex_rank import LexRankSummarizer
 from sumy.summarizers.text_rank import TextRankSummarizer
 from sumy.utils import get_stop_words
 
@@ -75,12 +74,12 @@ class Summarizer:
 
     def __init__(self) -> None:
         ensure_nltk_data()
-        self._stemmer = Stemmer(LANGUAGE)
-        self._stop_words = set(get_stop_words(LANGUAGE))
+        self._stemmer: Any = Stemmer(LANGUAGE)
+        self._stop_words: set[str] = set(get_stop_words(LANGUAGE))
 
     # ── Public API ─────────────────────────────────────────────────────────
 
-    def generate(self, repo: "RawRepo", readme: "ParsedReadme") -> dict:
+    def generate(self, repo: "RawRepo", readme: "ParsedReadme") -> dict[str, Any]:
         """
         Return a dict with all content sections ready for the template.
         """
@@ -135,19 +134,19 @@ class Summarizer:
             return []
         try:
             # TF-IDF on sentences
-            sentences = nltk.sent_tokenize(text)
+            sentences: Any = nltk.sent_tokenize(text)
             if not sentences:
                 return []
-            vectorizer = TfidfVectorizer(
+            vectorizer: Any = TfidfVectorizer(
                 max_features=200,
                 stop_words="english",
                 ngram_range=(1, 2),
                 min_df=1,
             )
-            matrix = vectorizer.fit_transform(sentences)
-            scores = matrix.sum(axis=0).A1
-            vocab = vectorizer.get_feature_names_out()
-            ranked = sorted(zip(vocab, scores), key=lambda x: -x[1])
+            matrix: Any = vectorizer.fit_transform(sentences)
+            scores: Any = matrix.sum(axis=0).A1
+            vocab: Any = vectorizer.get_feature_names_out()
+            ranked: list[tuple[Any, Any]] = sorted(zip(vocab, scores), key=lambda x: -x[1])
             return [kw for kw, _ in ranked[:top_n] if len(kw) > 3]
         except Exception as exc:
             logger.debug("Keyword extraction failed: {}", exc)
@@ -166,15 +165,15 @@ class Summarizer:
         if not text or len(text.split()) < 20:
             return text[:300] if text else ""
         try:
-            parser = PlaintextParser.from_string(text, Tokenizer(LANGUAGE))
-            summarizer = TextRankSummarizer(self._stemmer)
-            summarizer.stop_words = get_stop_words(LANGUAGE)
-            sentences = summarizer(parser.document, sentence_count)
+            parser: Any = PlaintextParser.from_string(text, Tokenizer(LANGUAGE))
+            summarizer_tr: Any = TextRankSummarizer(self._stemmer)
+            summarizer_tr.stop_words = get_stop_words(LANGUAGE)
+            sentences: Any = summarizer_tr(parser.document, sentence_count)
             return " ".join(str(s) for s in sentences)
         except Exception:
             try:
-                sentences = nltk.sent_tokenize(text)
-                return " ".join(sentences[:sentence_count])
+                sent_list: Any = nltk.sent_tokenize(text)
+                return " ".join(sent_list[:sentence_count])
             except Exception:
                 return text[:400]
 
@@ -401,17 +400,17 @@ class Summarizer:
             learnings.append(f"Domain knowledge in {', '.join((repo.topics or [])[:3])}")
         return learnings[:5]
 
-    def _suggest_similar(self, repo: "RawRepo") -> list[dict]:
+    def _suggest_similar(self, repo: "RawRepo") -> list[dict[str, str]]:
         """
         Build a list of suggested similar repos based on topics + language.
         In production these would come from a GitHub search; here we use
         curated pairs to stay free & offline-safe.
         """
-        suggestions: list[dict] = []
+        suggestions: list[dict[str, str]] = []
         topics = {t.lower() for t in (repo.topics or [])}
         lang = (repo.language or "").lower()
 
-        SIMILAR_DB: list[dict] = [
+        SIMILAR_DB: list[dict[str, str]] = [
             {"name": "sindresorhus/awesome", "desc": "Awesome lists about all kinds of interesting topics"},
             {"name": "public-apis/public-apis", "desc": "A collective list of free APIs"},
             {"name": "donnemartin/system-design-primer", "desc": "Learn how to design large-scale systems"},

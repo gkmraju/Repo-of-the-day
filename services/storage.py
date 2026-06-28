@@ -50,7 +50,7 @@ class Storage:
 
     # ── History ────────────────────────────────────────────────────────────
 
-    def get_sent_repos(self) -> list[dict]:
+    def get_sent_repos(self) -> list[dict[str, Any]]:
         with self._lock:
             return self._read_json(self._history_path)
 
@@ -58,11 +58,11 @@ class Storage:
         """Return a set of full_name strings already posted."""
         return {r.get("full_name", "") for r in self.get_sent_repos()}
 
-    def mark_as_sent(self, repo_full_name: str, repo_url: str, metadata: dict | None = None) -> None:
+    def mark_as_sent(self, repo_full_name: str, repo_url: str, metadata: dict[str, Any] | None = None) -> None:
         """Persist a repo as sent so it is never picked again."""
         with self._lock:
-            history: list[dict] = self._read_json(self._history_path)
-            entry: dict = {
+            history: list[dict[str, Any]] = self._read_json(self._history_path)
+            entry: dict[str, Any] = {
                 "full_name": repo_full_name,
                 "url": repo_url,
                 "posted_at": datetime.now(timezone.utc).isoformat(),
@@ -81,7 +81,7 @@ class Storage:
 
     # ── Cache ──────────────────────────────────────────────────────────────
 
-    def get_cache(self) -> dict:
+    def get_cache(self) -> dict[str, Any]:
         with self._lock:
             return self._read_json(self._cache_path)
 
@@ -101,7 +101,7 @@ class Storage:
 
     # ── Analytics ──────────────────────────────────────────────────────────
 
-    def get_history_summary(self) -> dict:
+    def get_history_summary(self) -> dict[str, Any]:
         history = self.get_sent_repos()
         return {
             "total_sent": len(history),
@@ -113,7 +113,7 @@ class Storage:
 
 # ── Helpers ────────────────────────────────────────────────────────────────
 
-def _count_field(records: list[dict], field: str) -> dict[str, int]:
+def _count_field(records: list[dict[str, Any]], field: str) -> dict[str, int]:
     counts: dict[str, int] = {}
     for r in records:
         val = r.get(field)
@@ -122,7 +122,7 @@ def _count_field(records: list[dict], field: str) -> dict[str, int]:
     return dict(sorted(counts.items(), key=lambda x: -x[1]))
 
 
-def _count_field_list(records: list[dict], field: str) -> dict[str, int]:
+def _count_field_list(records: list[dict[str, Any]], field: str) -> dict[str, int]:
     counts: dict[str, int] = {}
     for r in records:
         for item in r.get(field, []):

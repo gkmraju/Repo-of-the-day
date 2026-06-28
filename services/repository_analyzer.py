@@ -7,7 +7,7 @@ into a single AnalyzedRepo result object.
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import TYPE_CHECKING, Any
+from typing import Any
 
 from services.github_service import GitHubService, RawRepo
 from services.logger import logger
@@ -15,9 +15,6 @@ from services.readme_parser import ParsedReadme, parse_readme
 from services.repository_ranker import RepositoryRanker
 from services.summarizer import Summarizer
 from services.utils import days_ago, format_number, friendly_date, stars_tier
-
-if TYPE_CHECKING:
-    pass
 
 
 @dataclass
@@ -72,7 +69,7 @@ class AnalyzedRepo:
     pros: list[str] = field(default_factory=list)
     cons: list[str] = field(default_factory=list)
     learnings: list[str] = field(default_factory=list)
-    similar_projects: list[dict] = field(default_factory=list)
+    similar_projects: list[dict[str, str]] = field(default_factory=list)
     one_liner: str = ""
     keywords: list[str] = field(default_factory=list)
 
@@ -80,7 +77,7 @@ class AnalyzedRepo:
     source: str = ""
     thumbnail_path: str = ""
 
-    def to_dict(self) -> dict:
+    def to_dict(self) -> dict[str, Any]:
         return {k: v for k, v in self.__dict__.items()}
 
 

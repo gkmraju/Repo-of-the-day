@@ -6,12 +6,12 @@ professional typography, language colour accent, star badge.
 """
 from __future__ import annotations
 
-import io
 import math
+from datetime import datetime
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 
 from services.logger import logger
 from services.utils import format_number, get_language_color
@@ -71,11 +71,10 @@ def _draw_rounded_rect(
     draw: ImageDraw.ImageDraw,
     xy: tuple[int, int, int, int],
     radius: int,
-    fill: tuple,
-    outline: tuple | None = None,
+    fill: tuple[int, int, int],
+    outline: tuple[int, int, int] | None = None,
     outline_width: int = 1,
 ) -> None:
-    x0, y0, x1, y1 = xy
     draw.rounded_rectangle(xy, radius=radius, fill=fill, outline=outline, width=outline_width)
 
 
@@ -129,10 +128,10 @@ def _draw_circle_badge(
     cx: int,
     cy: int,
     radius: int,
-    fill: tuple,
+    fill: tuple[int, int, int],
     text: str,
     font: ImageFont.FreeTypeFont | ImageFont.ImageFont,
-    text_color: tuple = WHITE,
+    text_color: tuple[int, int, int] = WHITE,
 ) -> None:
     draw.ellipse((cx - radius, cy - radius, cx + radius, cy + radius), fill=fill)
     bbox = draw.textbbox((0, 0), text, font=font)
@@ -324,7 +323,6 @@ class ImageGenerator:
         draw.text((W - 60 - tw, footer_y + 5), tier, fill=STAR_COL, font=self._font_badge)
 
         # Bottom date label
-        from datetime import datetime
         today = datetime.now().strftime("%B %d, %Y")
         date_text = f"📅  {today}  •  github.com/trending"
         draw.text((60, footer_y + 38), date_text, fill=TEXT_SEC, font=self._font_tiny)

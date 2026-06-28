@@ -13,7 +13,7 @@ from __future__ import annotations
 import argparse
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -35,11 +35,23 @@ from services.telegram_service import TelegramService
 
 # ── HTML report generator ──────────────────────────────────────────────────
 
+def _strip_md(text: str) -> str:
+    """Strip common markdown markers so they don't leak into HTML."""
+    import re as _re
+    text = _re.sub(r"\*\*(.+?)\*\*", r"\1", text)
+    text = _re.sub(r"\*(.+?)\*", r"\1", text)
+    text = _re.sub(r"_{1,2}(.+?)_{1,2}", r"\1", text)
+    text = _re.sub(r"`(.+?)`", r"\1", text)
+    text = _re.sub(r"^[•\-]\s*", "", text, flags=_re.MULTILINE)
+    return text.strip()
+
+
 def generate_html_report(repo: object, reports_dir: str = "reports") -> str:
     """Render the Jinja2 HTML report and save to disk."""
     try:
         from jinja2 import Environment, FileSystemLoader
         env = Environment(loader=FileSystemLoader("templates"))
+        env.filters["strip_md"] = _strip_md
         template = env.get_template("html_report.jinja2")
         now_str = datetime.now().strftime("%B %d, %Y at %H:%M IST")
         html = template.render(repo=repo, now=now_str)
@@ -98,6 +110,7 @@ def run(
             return 1
 
     # ── Step 1: Discover or use forced repo ───────────────────────────────
+    raw_repos: list[RawRepo]
     if force_repo:
         logger.info("Force mode: analysing {}", force_repo)
         try:
@@ -177,14 +190,8 @@ def run(
             return 1
 
         logger.info("Posting to Telegram…")
-        caption = f"🚀 *Repo Of The Day* — {repo.full_name}"
         try:
-            if thumbnail_path and Path(thumbnail_path).exists():
-                results = telegram.send_photo_with_messages(
-                    thumbnail_path, message_chunks, caption
-                )
-            else:
-                results = telegram.send_text_only(message_chunks)
+            results = telegram.send_text_only(message_chunks)
             logger.info("Posted {} messages successfully", len(results))
         except Exception as exc:
             logger.error("Telegram posting failed: {}", exc)

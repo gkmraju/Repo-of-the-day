@@ -17,6 +17,9 @@ logs/
 assets/*.png
 reports/*.html
 
+# Runtime data (cache only; sent_repositories.json is tracked for history)
+data/repository_cache.json
+
 # OS
 .DS_Store
 Thumbs.db

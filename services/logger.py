@@ -8,7 +8,7 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
-from loguru import logger
+from loguru import logger as logger  # explicit re-export for type checkers
 
 
 def setup_logger(log_dir: str = "logs", level: str = "INFO") -> None:

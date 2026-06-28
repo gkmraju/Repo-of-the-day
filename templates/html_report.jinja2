@@ -3,374 +3,241 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Repo of the Day — {{ repo.name }}</title>
+  <title>{{ repo.owner }}/{{ repo.name }} · Repo of the Day</title>
   <style>
     :root {
-      --bg:       #0d1117;
-      --surface:  #161b22;
-      --card:     #21262d;
-      --border:   #30363d;
-      --text:     #e6edf3;
-      --muted:    #8b949e;
-      --accent:   #58a6ff;
-      --green:    #3fb950;
-      --yellow:   #d29922;
-      --red:      #f85149;
+      --bg:     #0d1117;
+      --card:   #161b22;
+      --card2:  #21262d;
+      --border: #30363d;
+      --text:   #e6edf3;
+      --muted:  #8b949e;
+      --accent: #58a6ff;
+      --green:  #3fb950;
+      --yellow: #d29922;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background: var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      line-height: 1.6;
-      padding: 2rem;
+      font-size: 14px;
+      line-height: 1.55;
+      padding: 16px;
+      max-width: 480px;
+      margin: 0 auto;
     }
     a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
 
-    .container { max-width: 900px; margin: 0 auto; }
-
-    /* Header */
-    .badge-top {
+    /* ── Top label ── */
+    .label {
+      display: inline-block;
       background: var(--accent);
       color: #000;
+      font-size: 10px;
       font-weight: 700;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      padding: 4px 12px;
+      letter-spacing: 0.12em;
+      padding: 3px 10px;
       border-radius: 20px;
-      display: inline-block;
-      margin-bottom: 1.5rem;
+      margin-bottom: 12px;
     }
-    .repo-header {
+
+    /* ── Card ── */
+    .card {
+      background: var(--card);
       border: 1px solid var(--border);
-      background: var(--surface);
       border-radius: 12px;
-      padding: 2rem;
-      margin-bottom: 1.5rem;
+      padding: 14px 16px;
+      margin-bottom: 8px;
     }
-    .repo-title { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .repo-title .owner { color: var(--muted); font-weight: 400; }
-    .description { color: var(--muted); font-size: 1.05rem; margin-bottom: 1rem; }
-    .meta-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
-    .meta-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; color: var(--muted); }
-    .meta-item strong { color: var(--text); }
-    .topics { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-    .topic-pill {
-      background: var(--card);
+
+    /* ── Repo identity ── */
+    .repo-name {
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+    .repo-name .owner { color: var(--muted); font-weight: 400; }
+
+    .desc {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    /* ── Stats row ── */
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.82rem;
+      margin-bottom: 10px;
+    }
+    .stat { display: flex; align-items: center; gap: 4px; }
+    .stat b { color: var(--text); }
+    .yellow { color: var(--yellow); }
+
+    /* ── Tags ── */
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+    .tag {
+      background: var(--card2);
       border: 1px solid var(--border);
       border-radius: 20px;
-      padding: 2px 10px;
-      font-size: 0.8rem;
+      padding: 1px 9px;
+      font-size: 0.75rem;
       color: var(--accent);
     }
 
-    /* Stats grid */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    .stat-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem;
-      text-align: center;
-    }
-    .stat-value { font-size: 1.5rem; font-weight: 700; color: var(--text); }
-    .stat-label { font-size: 0.8rem; color: var(--muted); }
-    .stars-value { color: var(--yellow); }
-
-    /* Score bar */
-    .score-section {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
+    /* ── Meta line ── */
+    .meta {
+      font-size: 0.78rem;
+      color: var(--muted);
       display: flex;
-      align-items: center;
-      gap: 1rem;
+      flex-wrap: wrap;
+      gap: 10px;
     }
-    .score-label { font-weight: 600; min-width: 120px; }
-    .score-bar {
-      flex: 1;
-      height: 10px;
-      background: var(--border);
-      border-radius: 5px;
-      overflow: hidden;
-    }
-    .score-fill {
-      height: 100%;
-      border-radius: 5px;
-      background: linear-gradient(90deg, var(--accent), var(--green));
-      width: {{ repo.score }}%;
-      transition: width 0.5s;
-    }
-    .score-num { font-weight: 700; color: var(--accent); min-width: 60px; text-align: right; }
 
-    /* Content sections */
-    .section {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
+    /* ── Score badge (top-right in header card) ── */
+    .score-badge {
+      float: right;
+      background: linear-gradient(135deg, var(--accent), var(--green));
+      color: #000;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: 20px;
+      margin-left: 8px;
     }
-    .section h2 {
-      font-size: 1rem;
+
+    /* ── Section title ── */
+    .stitle {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
       color: var(--accent);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border);
+      margin-bottom: 6px;
     }
-    .section p { color: var(--muted); }
-    .bullet-list { list-style: none; }
-    .bullet-list li { padding: 0.25rem 0; color: var(--muted); }
-    .bullet-list li::before { content: "▸ "; color: var(--accent); }
 
-    /* Code block */
-    pre {
-      background: var(--bg);
-      border: 1px solid var(--border);
+    /* ── Body text ── */
+    .body { font-size: 0.85rem; color: var(--muted); }
+
+    /* ── Feature list ── */
+    .features { list-style: none; }
+    .features li { font-size: 0.85rem; color: var(--muted); padding: 2px 0; }
+    .features li::before { content: "▸ "; color: var(--accent); }
+
+    /* ── CTA button ── */
+    .cta {
+      display: block;
+      background: var(--accent);
+      color: #000 !important;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 11px;
       border-radius: 8px;
-      padding: 1rem;
-      overflow-x: auto;
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      margin-top: 8px;
+    }
+    .cta-ghost {
+      display: block;
+      border: 1px solid var(--border);
+      color: var(--text) !important;
       font-size: 0.85rem;
-      color: var(--green);
-      margin: 0.5rem 0;
-    }
-
-    /* Similar projects */
-    .similar-grid { display: flex; flex-direction: column; gap: 0.5rem; }
-    .similar-item {
-      background: var(--card);
-      border: 1px solid var(--border);
+      text-align: center;
+      padding: 9px;
       border-radius: 8px;
-      padding: 0.75rem 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      margin-top: 6px;
     }
-    .similar-item a { font-weight: 600; }
-    .similar-desc { color: var(--muted); font-size: 0.85rem; }
 
-    /* Footer */
+    /* ── Footer ── */
     .footer {
       text-align: center;
       color: var(--muted);
-      font-size: 0.85rem;
-      padding: 2rem 0 1rem;
+      font-size: 0.75rem;
+      padding: 14px 0 6px;
       border-top: 1px solid var(--border);
-      margin-top: 2rem;
+      margin-top: 12px;
     }
     .one-liner {
-      background: linear-gradient(135deg, var(--accent), var(--green));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 1.2rem;
-      font-weight: 700;
+      font-size: 0.82rem;
+      font-style: italic;
+      color: var(--accent);
       text-align: center;
-      margin: 1.5rem 0;
-    }
-
-    @media (max-width: 600px) {
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      margin: 10px 0 4px;
     }
   </style>
 </head>
 <body>
-<div class="container">
-  <div class="badge-top">🚀 REPO OF THE DAY — {{ now }}</div>
 
-  <!-- Header -->
-  <div class="repo-header">
-    <div class="repo-title">
+  <div class="label">🚀 REPO OF THE DAY &nbsp;·&nbsp; {{ now }}</div>
+
+  <!-- ── Identity card ────────────────────────────────────────── -->
+  <div class="card">
+    <span class="score-badge">{{ "%.0f"|format(repo.score) }}/100</span>
+    <div class="repo-name">
       <span class="owner">{{ repo.owner }}/</span>{{ repo.name }}
     </div>
-    <div class="description">{{ repo.description }}</div>
-    <div class="meta-row">
-      {% if repo.language %}
-      <div class="meta-item">💻 <strong>{{ repo.language }}</strong></div>
-      {% endif %}
-      {% if repo.license %}
-      <div class="meta-item">📜 <strong>{{ repo.license }}</strong></div>
-      {% endif %}
-      <div class="meta-item">📅 Updated: <strong>{{ repo.updated_friendly }}</strong></div>
-      {% if repo.latest_release %}
-      <div class="meta-item">🏷️ <strong>{{ repo.latest_release }}</strong></div>
-      {% endif %}
+    <div class="desc">{{ repo.description }}</div>
+
+    <div class="stats">
+      <div class="stat yellow"><b>⭐ {{ repo.stars_formatted }}</b> stars</div>
+      <div class="stat"><b>🍴 {{ repo.forks_formatted }}</b> forks</div>
+      {% if repo.language %}<div class="stat">💻 <b>{{ repo.language }}</b></div>{% endif %}
+      {% if repo.contributors_count %}<div class="stat">👥 <b>{{ repo.contributors_count }}</b> contributors</div>{% endif %}
     </div>
+
     {% if repo.topics %}
-    <div class="topics">
-      {% for t in repo.topics %}
-      <span class="topic-pill">#{{ t }}</span>
-      {% endfor %}
+    <div class="tags">
+      {% for t in repo.topics[:6] %}<span class="tag">#{{ t }}</span>{% endfor %}
     </div>
     {% endif %}
-  </div>
 
-  <!-- Stats -->
-  <div class="stats-grid">
-    <div class="stat-card">
-      <div class="stat-value stars-value">{{ repo.stars_formatted }}</div>
-      <div class="stat-label">⭐ Stars</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">{{ repo.forks_formatted }}</div>
-      <div class="stat-label">🍴 Forks</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">{{ repo.contributors_count or '?' }}</div>
-      <div class="stat-label">👥 Contributors</div>
-    </div>
-    <div class="stat-card">
-      <div class="stat-value">{{ repo.open_issues or 0 }}</div>
-      <div class="stat-label">🐛 Open Issues</div>
+    <div class="meta" style="margin-top:8px;">
+      {% if repo.license %}<span>📜 {{ repo.license }}</span>{% endif %}
+      {% if repo.latest_release %}<span>🏷️ {{ repo.latest_release }}</span>{% endif %}
+      <span>📅 Updated {{ repo.updated_friendly }}</span>
     </div>
   </div>
 
-  <!-- Score -->
-  <div class="score-section">
-    <div class="score-label">🏆 Composite Score</div>
-    <div class="score-bar"><div class="score-fill"></div></div>
-    <div class="score-num">{{ "%.1f" | format(repo.score) }}/100</div>
+  <!-- ── About ──────────────────────────────────────────────────── -->
+  <div class="card">
+    <div class="stitle">About</div>
+    <div class="body">{{ repo.what_is | strip_md }}</div>
   </div>
 
-  <!-- What is it -->
-  <div class="section">
-    <h2>📖 What is it?</h2>
-    <p>{{ repo.what_is }}</p>
-  </div>
-
-  <!-- Why useful -->
-  <div class="section">
-    <h2>❓ Why is it useful?</h2>
-    <p style="white-space: pre-line;">{{ repo.why_useful }}</p>
-  </div>
-
-  <!-- Features -->
+  <!-- ── Key Features ──────────────────────────────────────────── -->
   {% if repo.features %}
-  <div class="section">
-    <h2>✨ Key Features</h2>
-    <ul class="bullet-list">
-      {% for f in repo.features %}
-      <li>{{ f }}</li>
+  <div class="card">
+    <div class="stitle">Key Features</div>
+    <ul class="features">
+      {% for f in repo.features[:5] %}
+      <li>{{ f | strip_md }}</li>
       {% endfor %}
     </ul>
   </div>
   {% endif %}
 
-  <!-- How it works -->
-  {% if repo.how_it_works %}
-  <div class="section">
-    <h2>⚙️ How it Works</h2>
-    <p>{{ repo.how_it_works }}</p>
+  <!-- ── Why Use It ────────────────────────────────────────────── -->
+  {% if repo.why_useful %}
+  <div class="card">
+    <div class="stitle">Why Use It</div>
+    <div class="body">{{ repo.why_useful | strip_md }}</div>
   </div>
   {% endif %}
 
-  <!-- Installation -->
-  {% if repo.installation %}
-  <div class="section">
-    <h2>📦 Installation</h2>
-    <pre>{{ repo.installation }}</pre>
-  </div>
+  <!-- ── Actions ───────────────────────────────────────────────── -->
+  <a class="cta" href="{{ repo.url }}" target="_blank">🔗 View on GitHub →</a>
+  {% if repo.homepage %}
+  <a class="cta-ghost" href="{{ repo.homepage }}" target="_blank">🌐 Homepage →</a>
   {% endif %}
 
-  <!-- Example -->
-  {% if repo.quick_example %}
-  <div class="section">
-    <h2>💻 Quick Example</h2>
-    <pre>{{ repo.quick_example }}</pre>
-  </div>
+  {% if repo.one_liner %}
+  <div class="one-liner">{{ repo.one_liner | strip_md }}</div>
   {% endif %}
 
-  <!-- Tech Stack -->
-  {% if repo.tech_stack %}
-  <div class="section">
-    <h2>🛠 Tech Stack</h2>
-    <ul class="bullet-list">
-      {% for item in repo.tech_stack %}
-      <li>{{ item }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+  <div class="footer">Repo Of The Day &nbsp;·&nbsp; {{ now }}</div>
 
-  <!-- Who should use it -->
-  {% if repo.audience %}
-  <div class="section">
-    <h2>👥 Who Should Use It?</h2>
-    <ul class="bullet-list">
-      {% for a in repo.audience %}
-      <li>{{ a }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
-  <!-- Pros & Cons -->
-  <div class="section">
-    <h2>✅ Pros &amp; ⚠️ Considerations</h2>
-    <ul class="bullet-list">
-      {% for p in repo.pros %}<li>✅ {{ p }}</li>{% endfor %}
-      {% for c in repo.cons %}<li>⚠️ {{ c }}</li>{% endfor %}
-    </ul>
-  </div>
-
-  <!-- Learnings -->
-  {% if repo.learnings %}
-  <div class="section">
-    <h2>🎓 What Can You Learn?</h2>
-    <ul class="bullet-list">
-      {% for l in repo.learnings %}
-      <li>{{ l }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
-  <!-- Similar Projects -->
-  {% if repo.similar_projects %}
-  <div class="section">
-    <h2>🔄 Similar Projects</h2>
-    <div class="similar-grid">
-      {% for proj in repo.similar_projects %}
-      <div class="similar-item">
-        <a href="https://github.com/{{ proj.name }}" target="_blank">{{ proj.name }}</a>
-        <span class="similar-desc">{{ proj.desc }}</span>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  {% endif %}
-
-  <!-- One-liner -->
-  <div class="one-liner">{{ repo.one_liner }}</div>
-
-  <!-- CTA -->
-  <div style="text-align:center; margin-bottom: 2rem;">
-    <a href="{{ repo.url }}" target="_blank"
-       style="background:var(--accent);color:#000;font-weight:700;padding:0.75rem 2rem;border-radius:8px;display:inline-block;">
-      🔗 View on GitHub
-    </a>
-    {% if repo.homepage %}
-    &nbsp;
-    <a href="{{ repo.homepage }}" target="_blank"
-       style="background:var(--card);border:1px solid var(--border);color:var(--text);font-weight:600;padding:0.75rem 2rem;border-radius:8px;display:inline-block;">
-      🌐 Homepage
-    </a>
-    {% endif %}
-  </div>
-
-  <div class="footer">
-    Generated by <strong>Repo Of The Day</strong> · {{ now }} · 100% Free &amp; Open Source
-  </div>
-</div>
 </body>
 </html>
