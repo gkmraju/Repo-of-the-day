@@ -208,7 +208,7 @@ def _extract_description(text: str, title: str) -> str:
         if len(clean) < 30:
             continue
         # Skip lines that are entirely badges / shields
-        if re.match(r"^(\[!\[.*", para.strip()):
+        if re.match(r"^\[!\[", para.strip()):
             continue
         # Take up to 200 chars
         return clean[:200]
