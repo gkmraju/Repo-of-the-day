@@ -1,0 +1,100 @@
+{# telegram_template.jinja2
+   Telegram MarkdownV2 message template.
+   All user-supplied strings must be passed through the `e` filter (escape_mv2).
+
+   Variables expected:
+     repo  — AnalyzedRepo instance (or dict with same keys)
+     divider — escaped divider string
+#}
+{{ divider }}
+🚀 *REPO OF THE DAY*
+{{ divider }}
+
+📦 *Repository:* {{ repo.full_name | e }}
+⭐ *Stars:* {{ repo.stars_formatted | e }}  {{ repo.stars_tier | e }}
+💻 *Language:* {{ repo.language | e }}
+👤 *Author:* {{ repo.owner | e }}
+{% if repo.license %}📜 *License:* {{ repo.license | e }}{% endif %}
+{% if repo.topics %}🏷️  {% for t in repo.topics[:6] %}#{{ t | e }}  {% endfor %}{% endif %}
+
+{{ divider }}
+📖 *What is it?*
+{{ divider }}
+{{ repo.what_is | e }}
+
+{{ divider }}
+❓ *Why is it useful?*
+{{ divider }}
+{{ repo.why_useful | e }}
+
+{% if repo.audience %}
+{{ divider }}
+👥 *Who should use it?*
+{{ divider }}
+{% for a in repo.audience %}• {{ a | e }}
+{% endfor %}
+{% endif %}
+
+{% if repo.features %}
+{{ divider }}
+✨ *Key Features*
+{{ divider }}
+{% for f in repo.features[:8] %}▸ {{ f | e }}
+{% endfor %}
+{% endif %}
+
+{% if repo.how_it_works %}
+{{ divider }}
+⚙️ *How it works*
+{{ divider }}
+{{ repo.how_it_works[:600] | e }}
+{% endif %}
+
+{% if repo.installation %}
+{{ divider }}
+📦 *Installation*
+{{ divider }}
+```
+{{ repo.installation[:400] }}
+```
+{% endif %}
+
+{% if repo.quick_example %}
+{{ divider }}
+💻 *Quick Example*
+{{ divider }}
+```
+{{ repo.quick_example[:400] }}
+```
+{% endif %}
+
+{% if repo.tech_stack %}
+{{ divider }}
+🛠 *Tech Stack*
+{{ divider }}
+{% for item in repo.tech_stack[:6] %}• {{ item | e }}
+{% endfor %}
+{% endif %}
+
+{{ divider }}
+📊 *GitHub Statistics*
+{{ divider }}
+⭐ Stars:        *{{ repo.stars_formatted | e }}*
+🍴 Forks:        {{ repo.forks_formatted | e }}
+👥 Contributors: {{ repo.contributors_count | e }}
+🐞 Open Issues:  {{ repo.open_issues | e }}
+📅 Last Updated: {{ repo.updated_friendly | e }}
+{% if repo.latest_release %}🏷️  Latest Release: {{ repo.latest_release | e }}{% endif %}
+
+{{ divider }}
+🔗 *Repository Link*
+{{ divider }}
+[👉 {{ repo.full_name | e }}]({{ repo.url }})
+{% if repo.homepage %}[🌐 Homepage]({{ repo.homepage }}){% endif %}
+
+{{ divider }}
+{{ repo.one_liner | e }}
+
+💡 Learn something new every day\!
+🔔 Follow this channel for daily repos\!
+{{ divider }}

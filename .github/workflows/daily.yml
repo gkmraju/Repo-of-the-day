@@ -1,0 +1,136 @@
+name: 🚀 Repo Of The Day — Daily Post
+
+on:
+  # 9:00 PM IST = 15:30 UTC
+  schedule:
+    - cron: "30 15 * * *"
+
+  # Allow manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (generate content, skip Telegram posting)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      force_repo:
+        description: "Force a specific repo (e.g. owner/repo) — leave blank for auto-discovery"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write    # Needed to commit history JSON back to the repo
+
+jobs:
+  post-repo:
+    name: Discover & Post
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      # ── 1. Checkout ──────────────────────────────────────────────────────
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0    # Full history for data/ commits
+
+      # ── 2. Python setup ───────────────────────────────────────────────────
+      - name: 🐍 Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # ── 3. Cache pip packages ─────────────────────────────────────────────
+      - name: 📦 Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      # ── 4. Install dependencies ───────────────────────────────────────────
+      - name: ⚙️ Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # ── 5. Download NLTK data ─────────────────────────────────────────────
+      - name: 📚 Download NLTK data
+        run: |
+          python -c "
+          import nltk
+          for pkg in ['punkt', 'punkt_tab', 'stopwords', 'averaged_perceptron_tagger']:
+              nltk.download(pkg, quiet=True)
+          "
+
+      # ── 6. Ensure data directory & files exist ────────────────────────────
+      - name: 📂 Ensure data files exist
+        run: |
+          mkdir -p data assets reports logs
+          [ -f data/sent_repositories.json ] || echo '[]' > data/sent_repositories.json
+          [ -f data/repository_cache.json  ] || echo '{}' > data/repository_cache.json
+
+      # ── 7. Run the app ────────────────────────────────────────────────────
+      - name: 🚀 Run Repo Of The Day
+        env:
+          GITHUB_TOKEN:         ${{ secrets.GITHUB_TOKEN }}
+          TELEGRAM_BOT_TOKEN:   ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID:     ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          DRY_RUN_FLAG=""
+          FORCE_FLAG=""
+
+          # Workflow dispatch overrides
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            DRY_RUN_FLAG="--dry-run"
+            echo "🔍 Running in dry-run mode"
+          fi
+
+          if [ -n "${{ github.event.inputs.force_repo }}" ]; then
+            FORCE_FLAG="--force ${{ github.event.inputs.force_repo }}"
+            echo "📌 Forcing repo: ${{ github.event.inputs.force_repo }}"
+          fi
+
+          python app.py $DRY_RUN_FLAG $FORCE_FLAG
+
+      # ── 8. Commit updated history back to repo ────────────────────────────
+      - name: 💾 Commit history & reports
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Stage history and any new HTML reports
+          git add data/sent_repositories.json reports/ || true
+
+          # Only commit if there are changes
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update repo history $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      # ── 9. Upload logs as artifact ────────────────────────────────────────
+      - name: 📤 Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: repo-of-the-day-logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 7
+
+      # ── 10. Upload generated thumbnail ────────────────────────────────────
+      - name: 🖼️ Upload thumbnail
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: thumbnail-${{ github.run_number }}
+          path: assets/*.png
+          retention-days: 30
+          if-no-files-found: warn
