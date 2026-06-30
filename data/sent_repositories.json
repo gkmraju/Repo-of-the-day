@@ -14,5 +14,21 @@
       "youtube-downloader"
     ],
     "score": 99.0
+  },
+  {
+    "full_name": "openclaw/openclaw",
+    "url": "https://github.com/openclaw/openclaw",
+    "posted_at": "2026-06-30T17:26:21.181282+00:00",
+    "name": "openclaw",
+    "language": "TypeScript",
+    "stars": 381150,
+    "topics": [
+      "ai",
+      "assistant",
+      "own-your-data",
+      "personal",
+      "crustacean"
+    ],
+    "score": 98.5
   }
 ]
