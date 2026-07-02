@@ -46,5 +46,21 @@
       "self-hosted"
     ],
     "score": 100.0
+  },
+  {
+    "full_name": "huggingface/transformers",
+    "url": "https://github.com/huggingface/transformers",
+    "posted_at": "2026-07-02T17:12:46.268218+00:00",
+    "name": "transformers",
+    "language": "Python",
+    "stars": 162141,
+    "topics": [
+      "nlp",
+      "natural-language-processing",
+      "pytorch",
+      "pytorch-transformers",
+      "transformer"
+    ],
+    "score": 98.0
   }
 ]
