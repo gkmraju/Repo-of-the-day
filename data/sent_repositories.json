@@ -62,5 +62,21 @@
       "transformer"
     ],
     "score": 98.0
+  },
+  {
+    "full_name": "supabase/supabase",
+    "url": "https://github.com/supabase/supabase",
+    "posted_at": "2026-07-03T16:54:56.888832+00:00",
+    "name": "supabase",
+    "language": "TypeScript",
+    "stars": 105340,
+    "topics": [
+      "firebase",
+      "supabase",
+      "realtime",
+      "postgrest",
+      "postgres"
+    ],
+    "score": 96.0
   }
 ]
