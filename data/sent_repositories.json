@@ -78,5 +78,21 @@
       "postgres"
     ],
     "score": 96.0
+  },
+  {
+    "full_name": "immich-app/immich",
+    "url": "https://github.com/immich-app/immich",
+    "posted_at": "2026-07-04T16:35:13.649602+00:00",
+    "name": "immich",
+    "language": "TypeScript",
+    "stars": 105475,
+    "topics": [
+      "backup-tool",
+      "mobile-app",
+      "photo-gallery",
+      "photos",
+      "self-hosted"
+    ],
+    "score": 95.84
   }
 ]
