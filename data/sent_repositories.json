@@ -94,5 +94,21 @@
       "self-hosted"
     ],
     "score": 95.84
+  },
+  {
+    "full_name": "netdata/netdata",
+    "url": "https://github.com/netdata/netdata",
+    "posted_at": "2026-07-05T16:36:14.355602+00:00",
+    "name": "netdata",
+    "language": "Go",
+    "stars": 79499,
+    "topics": [
+      "monitoring",
+      "docker",
+      "kubernetes",
+      "cncf",
+      "prometheus"
+    ],
+    "score": 98.0
   }
 ]
