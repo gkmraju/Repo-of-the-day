@@ -110,5 +110,21 @@
       "prometheus"
     ],
     "score": 98.0
+  },
+  {
+    "full_name": "react/react",
+    "url": "https://github.com/react/react",
+    "posted_at": "2026-07-06T18:01:54.505521+00:00",
+    "name": "react",
+    "language": "JavaScript",
+    "stars": 246277,
+    "topics": [
+      "javascript",
+      "react",
+      "frontend",
+      "declarative",
+      "ui"
+    ],
+    "score": 96.63
   }
 ]
