@@ -126,5 +126,21 @@
       "ui"
     ],
     "score": 96.63
+  },
+  {
+    "full_name": "puppeteer/puppeteer",
+    "url": "https://github.com/puppeteer/puppeteer",
+    "posted_at": "2026-07-07T17:35:13.789767+00:00",
+    "name": "puppeteer",
+    "language": "TypeScript",
+    "stars": 95287,
+    "topics": [
+      "headless-chrome",
+      "testing",
+      "web",
+      "developer-tools",
+      "node-module"
+    ],
+    "score": 93.71
   }
 ]
