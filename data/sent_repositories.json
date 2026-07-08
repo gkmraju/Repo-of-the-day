@@ -142,5 +142,21 @@
       "node-module"
     ],
     "score": 93.71
+  },
+  {
+    "full_name": "OpenHands/OpenHands",
+    "url": "https://github.com/OpenHands/OpenHands",
+    "posted_at": "2026-07-08T16:59:25.798634+00:00",
+    "name": "OpenHands",
+    "language": "Python",
+    "stars": 79993,
+    "topics": [
+      "agent",
+      "artificial-intelligence",
+      "llm",
+      "chatgpt",
+      "claude-ai"
+    ],
+    "score": 94.9
   }
 ]
