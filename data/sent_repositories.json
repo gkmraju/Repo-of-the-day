@@ -158,5 +158,21 @@
       "claude-ai"
     ],
     "score": 94.9
+  },
+  {
+    "full_name": "ohmyzsh/ohmyzsh",
+    "url": "https://github.com/ohmyzsh/ohmyzsh",
+    "posted_at": "2026-07-09T17:33:37.022669+00:00",
+    "name": "ohmyzsh",
+    "language": "Shell",
+    "stars": 188516,
+    "topics": [
+      "shell",
+      "zsh-configuration",
+      "theme",
+      "terminal",
+      "productivity"
+    ],
+    "score": 98.5
   }
 ]
