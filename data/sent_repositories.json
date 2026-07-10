@@ -174,5 +174,21 @@
       "productivity"
     ],
     "score": 98.5
+  },
+  {
+    "full_name": "vercel/next.js",
+    "url": "https://github.com/vercel/next.js",
+    "posted_at": "2026-07-10T17:19:54.535025+00:00",
+    "name": "next.js",
+    "language": "JavaScript",
+    "stars": 140608,
+    "topics": [
+      "react",
+      "server-rendering",
+      "universal",
+      "node",
+      "components"
+    ],
+    "score": 93.28
   }
 ]
