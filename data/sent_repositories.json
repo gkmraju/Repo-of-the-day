@@ -190,5 +190,21 @@
       "components"
     ],
     "score": 93.28
+  },
+  {
+    "full_name": "cypress-io/cypress",
+    "url": "https://github.com/cypress-io/cypress",
+    "posted_at": "2026-07-11T16:18:42.043037+00:00",
+    "name": "cypress",
+    "language": "TypeScript",
+    "stars": 50560,
+    "topics": [
+      "cypress",
+      "end-to-end-testing",
+      "angular-testing-library",
+      "component-testing",
+      "cypress-cloud"
+    ],
+    "score": 93.36
   }
 ]
