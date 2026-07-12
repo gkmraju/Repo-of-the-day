@@ -206,5 +206,21 @@
       "cypress-cloud"
     ],
     "score": 93.36
+  },
+  {
+    "full_name": "google-gemini/gemini-cli",
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "posted_at": "2026-07-12T16:30:25.794763+00:00",
+    "name": "gemini-cli",
+    "language": "TypeScript",
+    "stars": 105931,
+    "topics": [
+      "gemini",
+      "gemini-api",
+      "ai",
+      "ai-agents",
+      "cli"
+    ],
+    "score": 99.5
   }
 ]
