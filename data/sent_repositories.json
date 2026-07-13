@@ -222,5 +222,21 @@
       "cli"
     ],
     "score": 99.5
+  },
+  {
+    "full_name": "neovim/neovim",
+    "url": "https://github.com/neovim/neovim",
+    "posted_at": "2026-07-13T17:32:21.622413+00:00",
+    "name": "neovim",
+    "language": "Vim Script",
+    "stars": 101110,
+    "topics": [
+      "neovim",
+      "c",
+      "vim",
+      "lua",
+      "nvim"
+    ],
+    "score": 94.07
   }
 ]
