@@ -238,5 +238,21 @@
       "nvim"
     ],
     "score": 94.07
+  },
+  {
+    "full_name": "penpot/penpot",
+    "url": "https://github.com/penpot/penpot",
+    "posted_at": "2026-07-14T16:46:35.060257+00:00",
+    "name": "penpot",
+    "language": "Clojure",
+    "stars": 56018,
+    "topics": [
+      "ux-design",
+      "ux-experience",
+      "prototyping",
+      "clojure",
+      "clojurescript"
+    ],
+    "score": 96.0
   }
 ]
