@@ -254,5 +254,21 @@
       "clojurescript"
     ],
     "score": 96.0
+  },
+  {
+    "full_name": "openinterpreter/openinterpreter",
+    "url": "https://github.com/openinterpreter/openinterpreter",
+    "posted_at": "2026-07-15T16:53:51.511916+00:00",
+    "name": "openinterpreter",
+    "language": "Rust",
+    "stars": 65279,
+    "topics": [
+      "coding-agent",
+      "deepseek",
+      "kimi",
+      "qwen",
+      "rust"
+    ],
+    "score": 94.3
   }
 ]
