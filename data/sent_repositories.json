@@ -270,5 +270,21 @@
       "rust"
     ],
     "score": 94.3
+  },
+  {
+    "full_name": "strapi/strapi",
+    "url": "https://github.com/strapi/strapi",
+    "posted_at": "2026-07-16T16:52:03.237784+00:00",
+    "name": "strapi",
+    "language": "TypeScript",
+    "stars": 72669,
+    "topics": [
+      "strapi",
+      "nodejs",
+      "api",
+      "dashboard",
+      "javascript"
+    ],
+    "score": 97.55
   }
 ]
