@@ -286,5 +286,21 @@
       "javascript"
     ],
     "score": 97.55
+  },
+  {
+    "full_name": "protocolbuffers/protobuf",
+    "url": "https://github.com/protocolbuffers/protobuf",
+    "posted_at": "2026-07-17T16:43:28.914949+00:00",
+    "name": "protobuf",
+    "language": "C++",
+    "stars": 71521,
+    "topics": [
+      "protobuf",
+      "protocol-buffers",
+      "protocol-compiler",
+      "protobuf-runtime",
+      "protoc"
+    ],
+    "score": 94.97
   }
 ]
