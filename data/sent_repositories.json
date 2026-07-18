@@ -302,5 +302,21 @@
       "protoc"
     ],
     "score": 94.97
+  },
+  {
+    "full_name": "langchain-ai/langchain",
+    "url": "https://github.com/langchain-ai/langchain",
+    "posted_at": "2026-07-18T16:28:27.280714+00:00",
+    "name": "langchain",
+    "language": "Python",
+    "stars": 142053,
+    "topics": [
+      "ai",
+      "anthropic",
+      "gemini",
+      "langchain",
+      "llm"
+    ],
+    "score": 95.86
   }
 ]
