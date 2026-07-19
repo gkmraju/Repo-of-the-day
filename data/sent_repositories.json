@@ -318,5 +318,21 @@
       "llm"
     ],
     "score": 95.86
+  },
+  {
+    "full_name": "go-gitea/gitea",
+    "url": "https://github.com/go-gitea/gitea",
+    "posted_at": "2026-07-19T16:29:26.220426+00:00",
+    "name": "gitea",
+    "language": "Go",
+    "stars": 56904,
+    "topics": [
+      "gitea",
+      "golang",
+      "devops",
+      "git",
+      "gitlab"
+    ],
+    "score": 99.5
   }
 ]
