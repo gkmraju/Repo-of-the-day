@@ -334,5 +334,21 @@
       "gitlab"
     ],
     "score": 99.5
+  },
+  {
+    "full_name": "langgenius/dify",
+    "url": "https://github.com/langgenius/dify",
+    "posted_at": "2026-07-20T16:55:39.416456+00:00",
+    "name": "dify",
+    "language": "TypeScript",
+    "stars": 149491,
+    "topics": [
+      "ai",
+      "gpt",
+      "llm",
+      "openai",
+      "python"
+    ],
+    "score": 97.5
   }
 ]
