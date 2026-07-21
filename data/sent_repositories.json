@@ -350,5 +350,21 @@
       "python"
     ],
     "score": 97.5
+  },
+  {
+    "full_name": "microsoft/playwright",
+    "url": "https://github.com/microsoft/playwright",
+    "posted_at": "2026-07-21T16:56:11.633893+00:00",
+    "name": "playwright",
+    "language": "TypeScript",
+    "stars": 93218,
+    "topics": [
+      "playwright",
+      "testing",
+      "automation",
+      "webkit",
+      "firefox"
+    ],
+    "score": 99.0
   }
 ]
