@@ -382,5 +382,21 @@
       "data-viz"
     ],
     "score": 97.5
+  },
+  {
+    "full_name": "caddyserver/caddy",
+    "url": "https://github.com/caddyserver/caddy",
+    "posted_at": "2026-07-23T16:57:21.458831+00:00",
+    "name": "caddy",
+    "language": "Go",
+    "stars": 74298,
+    "topics": [
+      "go",
+      "web-server",
+      "caddyfile",
+      "http",
+      "http-server"
+    ],
+    "score": 97.0
   }
 ]
