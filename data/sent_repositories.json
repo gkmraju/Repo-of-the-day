@@ -398,5 +398,21 @@
       "http-server"
     ],
     "score": 97.0
+  },
+  {
+    "full_name": "angular/angular",
+    "url": "https://github.com/angular/angular",
+    "posted_at": "2026-07-24T17:04:54.495232+00:00",
+    "name": "angular",
+    "language": "TypeScript",
+    "stars": 100610,
+    "topics": [
+      "angular",
+      "typescript",
+      "web",
+      "javascript",
+      "pwa"
+    ],
+    "score": 92.37
   }
 ]
