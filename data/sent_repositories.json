@@ -414,5 +414,21 @@
       "pwa"
     ],
     "score": 92.37
+  },
+  {
+    "full_name": "usebruno/bruno",
+    "url": "https://github.com/usebruno/bruno",
+    "posted_at": "2026-07-25T16:28:57.099871+00:00",
+    "name": "bruno",
+    "language": "JavaScript",
+    "stars": 45880,
+    "topics": [
+      "api-client",
+      "git",
+      "graphql-client",
+      "opensource",
+      "automation"
+    ],
+    "score": 97.09
   }
 ]
