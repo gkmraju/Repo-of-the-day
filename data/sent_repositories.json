@@ -430,5 +430,21 @@
       "automation"
     ],
     "score": 97.09
+  },
+  {
+    "full_name": "prettier/prettier",
+    "url": "https://github.com/prettier/prettier",
+    "posted_at": "2026-07-26T16:32:33.998470+00:00",
+    "name": "prettier",
+    "language": "JavaScript",
+    "stars": 52138,
+    "topics": [
+      "formatter",
+      "printer",
+      "prettier",
+      "ast",
+      "javascript"
+    ],
+    "score": 91.85
   }
 ]
