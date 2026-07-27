@@ -446,5 +446,21 @@
       "javascript"
     ],
     "score": 91.85
+  },
+  {
+    "full_name": "getsentry/sentry",
+    "url": "https://github.com/getsentry/sentry",
+    "posted_at": "2026-07-27T17:19:45.658318+00:00",
+    "name": "sentry",
+    "language": "Python",
+    "stars": 44390,
+    "topics": [
+      "crash-reporting",
+      "crash-reports",
+      "error-monitoring",
+      "monitoring",
+      "devops"
+    ],
+    "score": 93.0
   }
 ]
