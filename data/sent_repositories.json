@@ -462,5 +462,21 @@
       "devops"
     ],
     "score": 93.0
+  },
+  {
+    "full_name": "TryGhost/Ghost",
+    "url": "https://github.com/TryGhost/Ghost",
+    "posted_at": "2026-07-28T17:00:58.475300+00:00",
+    "name": "Ghost",
+    "language": "JavaScript",
+    "stars": 54595,
+    "topics": [
+      "journalism",
+      "publishing",
+      "blogging",
+      "javascript",
+      "web-application"
+    ],
+    "score": 94.54
   }
 ]
