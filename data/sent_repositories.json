@@ -478,5 +478,21 @@
       "web-application"
     ],
     "score": 94.54
+  },
+  {
+    "full_name": "Kong/kong",
+    "url": "https://github.com/Kong/kong",
+    "posted_at": "2026-07-29T16:49:58.495938+00:00",
+    "name": "kong",
+    "language": "Lua",
+    "stars": 43879,
+    "topics": [
+      "api-gateway",
+      "microservices",
+      "api-management",
+      "serverless",
+      "apis"
+    ],
+    "score": 96.92
   }
 ]
