@@ -494,5 +494,21 @@
       "apis"
     ],
     "score": 96.92
+  },
+  {
+    "full_name": "storybookjs/storybook",
+    "url": "https://github.com/storybookjs/storybook",
+    "posted_at": "2026-07-30T17:01:46.869939+00:00",
+    "name": "storybook",
+    "language": "TypeScript",
+    "stars": 90715,
+    "topics": [
+      "storybook",
+      "styleguide",
+      "testing",
+      "components",
+      "webpack"
+    ],
+    "score": 97.0
   }
 ]
