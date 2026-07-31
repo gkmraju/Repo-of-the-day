@@ -510,5 +510,21 @@
       "webpack"
     ],
     "score": 97.0
+  },
+  {
+    "full_name": "mudler/LocalAI",
+    "url": "https://github.com/mudler/LocalAI",
+    "posted_at": "2026-07-31T17:04:47.140823+00:00",
+    "name": "LocalAI",
+    "language": "Go",
+    "stars": 48067,
+    "topics": [
+      "llama",
+      "ai",
+      "llm",
+      "stable-diffusion",
+      "api"
+    ],
+    "score": 98.71
   }
 ]
