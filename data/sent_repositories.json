@@ -526,5 +526,21 @@
       "api"
     ],
     "score": 98.71
+  },
+  {
+    "full_name": "ccxt/ccxt",
+    "url": "https://github.com/ccxt/ccxt",
+    "posted_at": "2026-08-01T16:31:22.756646+00:00",
+    "name": "ccxt",
+    "language": "Python",
+    "stars": 43469,
+    "topics": [
+      "altcoin",
+      "api",
+      "arbitrage",
+      "bitcoin",
+      "bot"
+    ],
+    "score": 98.68
   }
 ]
