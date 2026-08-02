@@ -542,5 +542,21 @@
       "bot"
     ],
     "score": 98.68
+  },
+  {
+    "full_name": "novuhq/novu",
+    "url": "https://github.com/novuhq/novu",
+    "posted_at": "2026-08-02T16:31:14.652389+00:00",
+    "name": "novu",
+    "language": "TypeScript",
+    "stars": 39429,
+    "topics": [
+      "notifications",
+      "communication",
+      "email",
+      "sms",
+      "push-notifications"
+    ],
+    "score": 95.45
   }
 ]
