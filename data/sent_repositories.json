@@ -558,5 +558,21 @@
       "push-notifications"
     ],
     "score": 95.45
+  },
+  {
+    "full_name": "louislam/uptime-kuma",
+    "url": "https://github.com/louislam/uptime-kuma",
+    "posted_at": "2026-08-03T17:27:25.259593+00:00",
+    "name": "uptime-kuma",
+    "language": "JavaScript",
+    "stars": 89767,
+    "topics": [
+      "uptime",
+      "monitoring",
+      "docker",
+      "selfhosted",
+      "self-hosted"
+    ],
+    "score": 96.11
   }
 ]
