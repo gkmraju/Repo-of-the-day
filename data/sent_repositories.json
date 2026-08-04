@@ -574,5 +574,21 @@
       "self-hosted"
     ],
     "score": 96.11
+  },
+  {
+    "full_name": "webpack/webpack",
+    "url": "https://github.com/webpack/webpack",
+    "posted_at": "2026-08-04T17:15:25.780731+00:00",
+    "name": "webpack",
+    "language": "JavaScript",
+    "stars": 65901,
+    "topics": [
+      "webpack",
+      "javascript",
+      "module-bundler",
+      "loaders",
+      "plugins"
+    ],
+    "score": 96.5
   }
 ]
