@@ -590,5 +590,21 @@
       "plugins"
     ],
     "score": 96.5
+  },
+  {
+    "full_name": "hoppscotch/hoppscotch",
+    "url": "https://github.com/hoppscotch/hoppscotch",
+    "posted_at": "2026-08-05T17:02:21.656539+00:00",
+    "name": "hoppscotch",
+    "language": "TypeScript",
+    "stars": 79968,
+    "topics": [
+      "api",
+      "api-client",
+      "api-rest",
+      "pwa",
+      "api-testing"
+    ],
+    "score": 96.41
   }
 ]
