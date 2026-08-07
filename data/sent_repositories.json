@@ -606,5 +606,21 @@
       "api-testing"
     ],
     "score": 96.41
+  },
+  {
+    "full_name": "Significant-Gravitas/AutoGPT",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "posted_at": "2026-08-07T16:18:38.339293+00:00",
+    "name": "AutoGPT",
+    "language": "Python",
+    "stars": 186242,
+    "topics": [
+      "ai",
+      "openai",
+      "python",
+      "artificial-intelligence",
+      "autonomous-agents"
+    ],
+    "score": 97.5
   }
 ]
