@@ -622,5 +622,21 @@
       "autonomous-agents"
     ],
     "score": 97.5
+  },
+  {
+    "full_name": "microsoft/monaco-editor",
+    "url": "https://github.com/microsoft/monaco-editor",
+    "posted_at": "2026-08-08T15:57:39.664554+00:00",
+    "name": "monaco-editor",
+    "language": "JavaScript",
+    "stars": 46518,
+    "topics": [
+      "monaco-editor",
+      "vscode",
+      "editor",
+      "browser",
+      "typescript"
+    ],
+    "score": 95.92
   }
 ]
