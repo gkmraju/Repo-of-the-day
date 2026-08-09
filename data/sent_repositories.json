@@ -638,5 +638,21 @@
       "typescript"
     ],
     "score": 95.92
+  },
+  {
+    "full_name": "diegosouzapw/OmniRoute",
+    "url": "https://github.com/diegosouzapw/OmniRoute",
+    "posted_at": "2026-08-09T15:59:13.546433+00:00",
+    "name": "OmniRoute",
+    "language": "TypeScript",
+    "stars": 43995,
+    "topics": [
+      "a2a",
+      "ai-agents",
+      "ai-gateway",
+      "anthropic",
+      "claude"
+    ],
+    "score": 99.7
   }
 ]
