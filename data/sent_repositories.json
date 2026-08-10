@@ -654,5 +654,21 @@
       "claude"
     ],
     "score": 99.7
+  },
+  {
+    "full_name": "scrapy/scrapy",
+    "url": "https://github.com/scrapy/scrapy",
+    "posted_at": "2026-08-10T16:17:38.796912+00:00",
+    "name": "scrapy",
+    "language": "Python",
+    "stars": 63781,
+    "topics": [
+      "python",
+      "scraping",
+      "crawling",
+      "framework",
+      "crawler"
+    ],
+    "score": 91.22
   }
 ]
