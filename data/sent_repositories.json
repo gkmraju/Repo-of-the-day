@@ -670,5 +670,21 @@
       "crawler"
     ],
     "score": 91.22
+  },
+  {
+    "full_name": "jaywcjlove/awesome-mac",
+    "url": "https://github.com/jaywcjlove/awesome-mac",
+    "posted_at": "2026-08-11T16:19:43.000958+00:00",
+    "name": "awesome-mac",
+    "language": "Swift",
+    "stars": 110318,
+    "topics": [
+      "macos",
+      "software",
+      "mac",
+      "mac-osx",
+      "awesome"
+    ],
+    "score": 97.5
   }
 ]
