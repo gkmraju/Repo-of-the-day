@@ -686,5 +686,21 @@
       "awesome"
     ],
     "score": 97.5
+  },
+  {
+    "full_name": "infiniflow/ragflow",
+    "url": "https://github.com/infiniflow/ragflow",
+    "posted_at": "2026-08-12T16:20:09.814781+00:00",
+    "name": "ragflow",
+    "language": "Go",
+    "stars": 87447,
+    "topics": [
+      "ai",
+      "ai-agents",
+      "context-engine",
+      "llm-apps",
+      "rag"
+    ],
+    "score": 96.0
   }
 ]
