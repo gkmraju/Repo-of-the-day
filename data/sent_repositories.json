@@ -702,5 +702,21 @@
       "rag"
     ],
     "score": 96.0
+  },
+  {
+    "full_name": "ToolJet/ToolJet",
+    "url": "https://github.com/ToolJet/ToolJet",
+    "posted_at": "2026-08-13T16:19:21.359434+00:00",
+    "name": "ToolJet",
+    "language": "JavaScript",
+    "stars": 38651,
+    "topics": [
+      "javascript",
+      "internal-tools",
+      "self-hosted",
+      "reactjs",
+      "no-code"
+    ],
+    "score": 95.79
   }
 ]
