@@ -718,5 +718,21 @@
       "no-code"
     ],
     "score": 95.79
+  },
+  {
+    "full_name": "github/awesome-copilot",
+    "url": "https://github.com/github/awesome-copilot",
+    "posted_at": "2026-08-14T16:15:59.718754+00:00",
+    "name": "awesome-copilot",
+    "language": "Python",
+    "stars": 37822,
+    "topics": [
+      "ai",
+      "github-copilot",
+      "prompt-engineering",
+      "hacktoberfest",
+      "agent-skills"
+    ],
+    "score": 95.86
   }
 ]
