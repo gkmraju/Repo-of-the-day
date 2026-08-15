@@ -734,5 +734,21 @@
       "agent-skills"
     ],
     "score": 95.86
+  },
+  {
+    "full_name": "grafana/grafana",
+    "url": "https://github.com/grafana/grafana",
+    "posted_at": "2026-08-15T15:46:14.504900+00:00",
+    "name": "grafana",
+    "language": "TypeScript",
+    "stars": 76279,
+    "topics": [
+      "grafana",
+      "monitoring",
+      "analytics",
+      "metrics",
+      "influxdb"
+    ],
+    "score": 93.25
   }
 ]
