@@ -750,5 +750,21 @@
       "influxdb"
     ],
     "score": 93.25
+  },
+  {
+    "full_name": "XTLS/Xray-core",
+    "url": "https://github.com/XTLS/Xray-core",
+    "posted_at": "2026-08-16T15:47:54.645943+00:00",
+    "name": "Xray-core",
+    "language": "Go",
+    "stars": 41066,
+    "topics": [
+      "xray",
+      "vless",
+      "tunnel",
+      "anticensorship",
+      "vmess"
+    ],
+    "score": 98.55
   }
 ]
