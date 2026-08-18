@@ -776,5 +776,21 @@
     "stars": 105524,
     "topics": [],
     "score": 35.5
+  },
+  {
+    "full_name": "amruthpillai/reactive-resume",
+    "url": "https://github.com/amruthpillai/reactive-resume",
+    "posted_at": "2026-08-18T15:58:08.409394+00:00",
+    "name": "reactive-resume",
+    "language": "TypeScript",
+    "stars": 40976,
+    "topics": [
+      "resume-builder",
+      "react",
+      "tailwindcss",
+      "hacktoberfest",
+      "better-auth"
+    ],
+    "score": 97.04
   }
 ]
