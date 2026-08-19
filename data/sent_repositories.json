@@ -792,5 +792,21 @@
       "better-auth"
     ],
     "score": 97.04
+  },
+  {
+    "full_name": "santifer/career-ops",
+    "url": "https://github.com/santifer/career-ops",
+    "posted_at": "2026-08-19T15:58:42.603619+00:00",
+    "name": "career-ops",
+    "language": "JavaScript",
+    "stars": 65533,
+    "topics": [
+      "ai-agent",
+      "anthropic",
+      "automation",
+      "career",
+      "claude"
+    ],
+    "score": 97.82
   }
 ]
