@@ -808,5 +808,21 @@
       "claude"
     ],
     "score": 97.82
+  },
+  {
+    "full_name": "HKUDS/LightRAG",
+    "url": "https://github.com/HKUDS/LightRAG",
+    "posted_at": "2026-08-20T15:59:54.648643+00:00",
+    "name": "LightRAG",
+    "language": "Python",
+    "stars": 39014,
+    "topics": [
+      "knowledge-graph",
+      "large-language-models",
+      "retrieval-augmented-generation",
+      "genai",
+      "graphrag"
+    ],
+    "score": 97.93
   }
 ]
