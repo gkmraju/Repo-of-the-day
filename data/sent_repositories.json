@@ -824,5 +824,21 @@
       "graphrag"
     ],
     "score": 97.93
+  },
+  {
+    "full_name": "docling-project/docling",
+    "url": "https://github.com/docling-project/docling",
+    "posted_at": "2026-08-21T15:59:50.040807+00:00",
+    "name": "docling",
+    "language": "Python",
+    "stars": 65359,
+    "topics": [
+      "ai",
+      "convert",
+      "documents",
+      "pdf",
+      "tables"
+    ],
+    "score": 97.61
   }
 ]
