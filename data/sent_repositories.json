@@ -840,5 +840,21 @@
       "tables"
     ],
     "score": 97.61
+  },
+  {
+    "full_name": "backstage/backstage",
+    "url": "https://github.com/backstage/backstage",
+    "posted_at": "2026-08-22T15:46:38.095460+00:00",
+    "name": "backstage",
+    "language": "TypeScript",
+    "stars": 34212,
+    "topics": [
+      "infrastructure",
+      "dx",
+      "developer-experience",
+      "developer-portal",
+      "microservices"
+    ],
+    "score": 94.38
   }
 ]
