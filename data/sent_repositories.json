@@ -856,5 +856,21 @@
       "microservices"
     ],
     "score": 94.38
+  },
+  {
+    "full_name": "bytedance/deer-flow",
+    "url": "https://github.com/bytedance/deer-flow",
+    "posted_at": "2026-08-23T15:48:23.975578+00:00",
+    "name": "deer-flow",
+    "language": "Python",
+    "stars": 80661,
+    "topics": [
+      "agent",
+      "agentic",
+      "agentic-framework",
+      "agentic-workflow",
+      "ai"
+    ],
+    "score": 99.43
   }
 ]
