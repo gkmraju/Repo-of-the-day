@@ -872,5 +872,21 @@
       "ai"
     ],
     "score": 99.43
+  },
+  {
+    "full_name": "langchain-ai/deepagents",
+    "url": "https://github.com/langchain-ai/deepagents",
+    "posted_at": "2026-08-24T16:06:12.435349+00:00",
+    "name": "deepagents",
+    "language": "Python",
+    "stars": 28359,
+    "topics": [
+      "deepagents",
+      "langchain",
+      "langgraph",
+      "ai",
+      "python"
+    ],
+    "score": 94.43
   }
 ]
