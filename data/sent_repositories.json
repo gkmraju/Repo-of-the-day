@@ -888,5 +888,21 @@
       "python"
     ],
     "score": 94.43
+  },
+  {
+    "full_name": "PrefectHQ/prefect",
+    "url": "https://github.com/PrefectHQ/prefect",
+    "posted_at": "2026-08-25T16:10:44.468637+00:00",
+    "name": "prefect",
+    "language": "Python",
+    "stars": 23680,
+    "topics": [
+      "python",
+      "workflow",
+      "data-engineering",
+      "data-science",
+      "workflow-engine"
+    ],
+    "score": 95.19
   }
 ]
