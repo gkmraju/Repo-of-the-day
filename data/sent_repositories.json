@@ -952,5 +952,19 @@
       "ai-agents"
     ],
     "score": 96.44
+  },
+  {
+    "full_name": "NationalSecurityAgency/ghidra",
+    "url": "https://github.com/NationalSecurityAgency/ghidra",
+    "posted_at": "2026-08-29T18:47:12.370256+00:00",
+    "name": "ghidra",
+    "language": "Java",
+    "stars": 73600,
+    "topics": [
+      "software-analysis",
+      "disassembler",
+      "reverse-engineering"
+    ],
+    "score": 93.78
   }
 ]
