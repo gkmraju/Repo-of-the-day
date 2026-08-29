@@ -936,5 +936,21 @@
       "sql"
     ],
     "score": 91.02
+  },
+  {
+    "full_name": "Mintplex-Labs/anything-llm",
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "posted_at": "2026-08-29T00:07:11.450430+00:00",
+    "name": "anything-llm",
+    "language": "JavaScript",
+    "stars": 65344,
+    "topics": [
+      "rag",
+      "localai",
+      "vector-database",
+      "llm",
+      "ai-agents"
+    ],
+    "score": 96.44
   }
 ]
