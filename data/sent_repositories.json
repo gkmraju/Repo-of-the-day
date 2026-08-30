@@ -966,5 +966,21 @@
       "reverse-engineering"
     ],
     "score": 93.78
+  },
+  {
+    "full_name": "unslothai/unsloth",
+    "url": "https://github.com/unslothai/unsloth",
+    "posted_at": "2026-08-30T18:44:48.303302+00:00",
+    "name": "unsloth",
+    "language": "Python",
+    "stars": 75254,
+    "topics": [
+      "fine-tuning",
+      "llama",
+      "llms",
+      "gemma",
+      "unsloth"
+    ],
+    "score": 96.91
   }
 ]
