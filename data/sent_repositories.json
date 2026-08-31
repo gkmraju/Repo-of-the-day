@@ -982,5 +982,21 @@
       "unsloth"
     ],
     "score": 96.91
+  },
+  {
+    "full_name": "fastify/fastify",
+    "url": "https://github.com/fastify/fastify",
+    "posted_at": "2026-08-31T20:58:16.440840+00:00",
+    "name": "fastify",
+    "language": "JavaScript",
+    "stars": 37070,
+    "topics": [
+      "webframework",
+      "performance",
+      "speed",
+      "nodejs",
+      "hacktoberfest"
+    ],
+    "score": 96.81
   }
 ]
