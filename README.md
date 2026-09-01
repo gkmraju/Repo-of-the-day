@@ -150,6 +150,16 @@ python app.py --force tiangolo/fastapi --dry-run
 python app.py --stats
 ```
 
+Run the deterministic scoring and storage tests:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+Pull requests run the test suite and compile all Python sources in GitHub
+Actions. The CI workflow is read-only and never posts to Telegram or updates
+repository history.
+
 ---
 
 ## 🔐 GitHub Actions Setup
@@ -299,7 +309,7 @@ python app.py --verbose                # DEBUG logging
 - [ ] Beginner-friendliness score
 - [ ] GitHub Pages automated report site
 - [ ] Docker support
-- [ ] Unit tests
+- [x] Unit tests for ranking, parsing, and storage contracts
 
 ---
 
@@ -316,7 +326,7 @@ Please keep all contributions free of paid API dependencies.
 
 ## 📄 License
 
-MIT License — free for personal and commercial use.
+MIT License — see [LICENSE](LICENSE).
 
 ---
 
