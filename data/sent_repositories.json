@@ -998,5 +998,21 @@
       "hacktoberfest"
     ],
     "score": 96.81
+  },
+  {
+    "full_name": "jackwener/OpenCLI",
+    "url": "https://github.com/jackwener/OpenCLI",
+    "posted_at": "2026-09-01T18:44:44.638455+00:00",
+    "name": "OpenCLI",
+    "language": "JavaScript",
+    "stars": 28840,
+    "topics": [
+      "ai-agent",
+      "ai-agents",
+      "ai-tools",
+      "cli",
+      "browser-automation"
+    ],
+    "score": 96.73
   }
 ]
