@@ -1014,5 +1014,21 @@
       "browser-automation"
     ],
     "score": 96.73
+  },
+  {
+    "full_name": "Gitlawb/openclaude",
+    "url": "https://github.com/Gitlawb/openclaude",
+    "posted_at": "2026-09-02T18:54:09.337491+00:00",
+    "name": "openclaude",
+    "language": "TypeScript",
+    "stars": 31878,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-tools",
+      "cli",
+      "coding"
+    ],
+    "score": 96.07
   }
 ]
