@@ -1030,5 +1030,21 @@
       "coding"
     ],
     "score": 96.07
+  },
+  {
+    "full_name": "stablyai/orca",
+    "url": "https://github.com/stablyai/orca",
+    "posted_at": "2026-09-03T18:52:43.990835+00:00",
+    "name": "orca",
+    "language": "TypeScript",
+    "stars": 60804,
+    "topics": [
+      "claude-code",
+      "codex",
+      "ghostty",
+      "terminal",
+      "cli"
+    ],
+    "score": 96.0
   }
 ]
