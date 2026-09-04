@@ -1046,5 +1046,21 @@
       "cli"
     ],
     "score": 96.0
+  },
+  {
+    "full_name": "sherlock-project/sherlock",
+    "url": "https://github.com/sherlock-project/sherlock",
+    "posted_at": "2026-09-04T18:34:51.151220+00:00",
+    "name": "sherlock",
+    "language": "Python",
+    "stars": 90930,
+    "topics": [
+      "osint",
+      "reconnaissance",
+      "linux",
+      "cli",
+      "sherlock"
+    ],
+    "score": 93.13
   }
 ]
