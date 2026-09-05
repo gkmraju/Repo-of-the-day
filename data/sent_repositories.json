@@ -1062,5 +1062,21 @@
       "sherlock"
     ],
     "score": 93.13
+  },
+  {
+    "full_name": "gchq/CyberChef",
+    "url": "https://github.com/gchq/CyberChef",
+    "posted_at": "2026-09-05T17:31:25.742765+00:00",
+    "name": "CyberChef",
+    "language": "JavaScript",
+    "stars": 35751,
+    "topics": [
+      "data-analysis",
+      "data-manipulation",
+      "encryption",
+      "encoding",
+      "compression"
+    ],
+    "score": 97.22
   }
 ]
