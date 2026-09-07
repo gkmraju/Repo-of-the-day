@@ -1094,5 +1094,21 @@
       "python"
     ],
     "score": 93.69
+  },
+  {
+    "full_name": "mksglu/context-mode",
+    "url": "https://github.com/mksglu/context-mode",
+    "posted_at": "2026-09-07T19:22:13.997837+00:00",
+    "name": "context-mode",
+    "language": "TypeScript",
+    "stars": 20725,
+    "topics": [
+      "claude",
+      "claude-code",
+      "claude-code-plugins",
+      "mcp",
+      "skills"
+    ],
+    "score": 96.97
   }
 ]
