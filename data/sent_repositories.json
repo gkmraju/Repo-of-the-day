@@ -1110,5 +1110,21 @@
       "skills"
     ],
     "score": 96.97
+  },
+  {
+    "full_name": "PostHog/posthog",
+    "url": "https://github.com/PostHog/posthog",
+    "posted_at": "2026-09-08T18:55:20.236535+00:00",
+    "name": "posthog",
+    "language": "Python",
+    "stars": 39673,
+    "topics": [
+      "analytics",
+      "python",
+      "react",
+      "javascript",
+      "typescript"
+    ],
+    "score": 95.97
   }
 ]
