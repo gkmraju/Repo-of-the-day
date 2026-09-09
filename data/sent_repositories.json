@@ -1126,5 +1126,21 @@
       "typescript"
     ],
     "score": 95.97
+  },
+  {
+    "full_name": "tesseract-ocr/tesseract",
+    "url": "https://github.com/tesseract-ocr/tesseract",
+    "posted_at": "2026-09-09T18:49:34.358020+00:00",
+    "name": "tesseract",
+    "language": "C++",
+    "stars": 76413,
+    "topics": [
+      "tesseract",
+      "tesseract-ocr",
+      "ocr",
+      "lstm",
+      "machine-learning"
+    ],
+    "score": 94.93
   }
 ]
