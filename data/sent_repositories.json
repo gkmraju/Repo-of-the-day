@@ -1142,5 +1142,21 @@
       "machine-learning"
     ],
     "score": 94.93
+  },
+  {
+    "full_name": "ultralytics/ultralytics",
+    "url": "https://github.com/ultralytics/ultralytics",
+    "posted_at": "2026-09-10T18:40:11.385447+00:00",
+    "name": "ultralytics",
+    "language": "Python",
+    "stars": 61480,
+    "topics": [
+      "ultralytics",
+      "yolov8",
+      "yolo",
+      "deep-learning",
+      "image-classification"
+    ],
+    "score": 99.0
   }
 ]
