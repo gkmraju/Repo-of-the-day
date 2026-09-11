@@ -1158,5 +1158,21 @@
       "image-classification"
     ],
     "score": 99.0
+  },
+  {
+    "full_name": "volcengine/OpenViking",
+    "url": "https://github.com/volcengine/OpenViking",
+    "posted_at": "2026-09-11T18:45:19.036621+00:00",
+    "name": "OpenViking",
+    "language": "Python",
+    "stars": 36685,
+    "topics": [
+      "context-database",
+      "agentic-rag",
+      "agent-memory",
+      "self-evolving",
+      "agent-plugins"
+    ],
+    "score": 98.78
   }
 ]
