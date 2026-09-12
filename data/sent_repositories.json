@@ -1174,5 +1174,21 @@
       "agent-plugins"
     ],
     "score": 98.78
+  },
+  {
+    "full_name": "github/spec-kit",
+    "url": "https://github.com/github/spec-kit",
+    "posted_at": "2026-09-12T17:50:30.195798+00:00",
+    "name": "spec-kit",
+    "language": "Python",
+    "stars": 135991,
+    "topics": [
+      "ai",
+      "copilot",
+      "development",
+      "engineering",
+      "prd"
+    ],
+    "score": 96.6
   }
 ]
