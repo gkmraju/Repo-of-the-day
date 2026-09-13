@@ -1190,5 +1190,21 @@
       "prd"
     ],
     "score": 96.6
+  },
+  {
+    "full_name": "alibaba/open-code-review",
+    "url": "https://github.com/alibaba/open-code-review",
+    "posted_at": "2026-09-13T18:19:41.215209+00:00",
+    "name": "open-code-review",
+    "language": "Go",
+    "stars": 23166,
+    "topics": [
+      "agent",
+      "code-review",
+      "code-review-assistant",
+      "harness",
+      "repository-level-context"
+    ],
+    "score": 95.72
   }
 ]
