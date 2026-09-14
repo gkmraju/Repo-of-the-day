@@ -1206,5 +1206,21 @@
       "repository-level-context"
     ],
     "score": 95.72
+  },
+  {
+    "full_name": "searxng/searxng",
+    "url": "https://github.com/searxng/searxng",
+    "posted_at": "2026-09-14T19:57:57.174002+00:00",
+    "name": "searxng",
+    "language": "Python",
+    "stars": 37064,
+    "topics": [
+      "metasearch",
+      "search",
+      "python",
+      "searxng",
+      "search-engine"
+    ],
+    "score": 92.23
   }
 ]
