@@ -1222,5 +1222,21 @@
       "search-engine"
     ],
     "score": 92.23
+  },
+  {
+    "full_name": "danny-avila/LibreChat",
+    "url": "https://github.com/danny-avila/LibreChat",
+    "posted_at": "2026-09-15T19:11:59.003081+00:00",
+    "name": "LibreChat",
+    "language": "TypeScript",
+    "stars": 43734,
+    "topics": [
+      "ai",
+      "chatgpt",
+      "clone",
+      "chatgpt-clone",
+      "librechat"
+    ],
+    "score": 96.69
   }
 ]
