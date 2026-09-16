@@ -1238,5 +1238,21 @@
       "librechat"
     ],
     "score": 96.69
+  },
+  {
+    "full_name": "onyx-dot-app/onyx",
+    "url": "https://github.com/onyx-dot-app/onyx",
+    "posted_at": "2026-09-16T19:03:02.244873+00:00",
+    "name": "onyx",
+    "language": "Python",
+    "stars": 32124,
+    "topics": [
+      "enterprise-search",
+      "rag",
+      "ai-chat",
+      "chatgpt",
+      "gen-ai"
+    ],
+    "score": 94.39
   }
 ]
