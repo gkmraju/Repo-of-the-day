@@ -1254,5 +1254,21 @@
       "gen-ai"
     ],
     "score": 94.39
+  },
+  {
+    "full_name": "roboflow/supervision",
+    "url": "https://github.com/roboflow/supervision",
+    "posted_at": "2026-09-17T19:11:48.854083+00:00",
+    "name": "supervision",
+    "language": "Python",
+    "stars": 50757,
+    "topics": [
+      "computer-vision",
+      "image-processing",
+      "python",
+      "yolo",
+      "instance-segmentation"
+    ],
+    "score": 94.7
   }
 ]
