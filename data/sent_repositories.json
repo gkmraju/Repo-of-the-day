@@ -1270,5 +1270,21 @@
       "instance-segmentation"
     ],
     "score": 94.7
+  },
+  {
+    "full_name": "PaddlePaddle/PaddleOCR",
+    "url": "https://github.com/PaddlePaddle/PaddleOCR",
+    "posted_at": "2026-09-18T18:39:04.280492+00:00",
+    "name": "PaddleOCR",
+    "language": "Python",
+    "stars": 89782,
+    "topics": [
+      "ocr",
+      "chineseocr",
+      "pdf2markdown",
+      "pp-ocr",
+      "pp-structure"
+    ],
+    "score": 96.65
   }
 ]
