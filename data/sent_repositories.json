@@ -1286,5 +1286,21 @@
       "pp-structure"
     ],
     "score": 96.65
+  },
+  {
+    "full_name": "mem0ai/mem0",
+    "url": "https://github.com/mem0ai/mem0",
+    "posted_at": "2026-09-19T18:12:28.982512+00:00",
+    "name": "mem0",
+    "language": "Python",
+    "stars": 65644,
+    "topics": [
+      "ai",
+      "chatgpt",
+      "llm",
+      "python",
+      "rag"
+    ],
+    "score": 97.5
   }
 ]
