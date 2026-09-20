@@ -1302,5 +1302,21 @@
       "rag"
     ],
     "score": 97.5
+  },
+  {
+    "full_name": "trycua/cua",
+    "url": "https://github.com/trycua/cua",
+    "posted_at": "2026-09-20T18:18:32.458985+00:00",
+    "name": "cua",
+    "language": "HTML",
+    "stars": 25032,
+    "topics": [
+      "apple",
+      "cua",
+      "lume",
+      "macos",
+      "virtualization"
+    ],
+    "score": 96.22
   }
 ]
