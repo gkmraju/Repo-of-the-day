@@ -1318,5 +1318,20 @@
       "virtualization"
     ],
     "score": 96.22
+  },
+  {
+    "full_name": "davila7/claude-code-templates",
+    "url": "https://github.com/davila7/claude-code-templates",
+    "posted_at": "2026-09-21T20:07:27.784022+00:00",
+    "name": "claude-code-templates",
+    "language": "Python",
+    "stars": 30888,
+    "topics": [
+      "anthropic",
+      "anthropic-claude",
+      "claude",
+      "claude-code"
+    ],
+    "score": 94.21
   }
 ]
