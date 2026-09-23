@@ -1349,5 +1349,21 @@
       "ai-gateway"
     ],
     "score": 99.44
+  },
+  {
+    "full_name": "code-yeongyu/oh-my-openagent",
+    "url": "https://github.com/code-yeongyu/oh-my-openagent",
+    "posted_at": "2026-09-23T19:12:15.049262+00:00",
+    "name": "oh-my-openagent",
+    "language": "TypeScript",
+    "stars": 69327,
+    "topics": [
+      "opencode",
+      "ai",
+      "anthropic",
+      "claude",
+      "claude-skills"
+    ],
+    "score": 96.6
   }
 ]
