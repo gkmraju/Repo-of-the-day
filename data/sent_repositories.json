@@ -1365,5 +1365,21 @@
       "claude-skills"
     ],
     "score": 96.6
+  },
+  {
+    "full_name": "x64dbg/x64dbg",
+    "url": "https://github.com/x64dbg/x64dbg",
+    "posted_at": "2026-09-24T19:24:35.187843+00:00",
+    "name": "x64dbg",
+    "language": "C++",
+    "stars": 49599,
+    "topics": [
+      "debugger",
+      "windows",
+      "x64",
+      "disassembler",
+      "reverse-engineering"
+    ],
+    "score": 95.67
   }
 ]
