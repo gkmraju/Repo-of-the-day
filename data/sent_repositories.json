@@ -1381,5 +1381,21 @@
       "reverse-engineering"
     ],
     "score": 95.67
+  },
+  {
+    "full_name": "payloadcms/payload",
+    "url": "https://github.com/payloadcms/payload",
+    "posted_at": "2026-09-25T19:26:20.251867+00:00",
+    "name": "payload",
+    "language": "TypeScript",
+    "stars": 44952,
+    "topics": [
+      "headless-cms",
+      "cms",
+      "express",
+      "graphql",
+      "react"
+    ],
+    "score": 96.53
   }
 ]
