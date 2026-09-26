@@ -1397,5 +1397,21 @@
       "react"
     ],
     "score": 96.53
+  },
+  {
+    "full_name": "withastro/astro",
+    "url": "https://github.com/withastro/astro",
+    "posted_at": "2026-09-26T18:43:57.098327+00:00",
+    "name": "astro",
+    "language": "TypeScript",
+    "stars": 62839,
+    "topics": [
+      "static-site-generator",
+      "blog",
+      "islands",
+      "components",
+      "node"
+    ],
+    "score": 95.34
   }
 ]
