@@ -1413,5 +1413,21 @@
       "node"
     ],
     "score": 95.34
+  },
+  {
+    "full_name": "expo/expo",
+    "url": "https://github.com/expo/expo",
+    "posted_at": "2026-09-27T19:10:50.713670+00:00",
+    "name": "expo",
+    "language": "TypeScript",
+    "stars": 52463,
+    "topics": [
+      "mobile",
+      "expo",
+      "native",
+      "web",
+      "universal"
+    ],
+    "score": 95.98
   }
 ]
