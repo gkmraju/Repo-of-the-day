@@ -1429,5 +1429,21 @@
       "universal"
     ],
     "score": 95.98
+  },
+  {
+    "full_name": "moeru-ai/airi",
+    "url": "https://github.com/moeru-ai/airi",
+    "posted_at": "2026-09-28T21:22:22.441171+00:00",
+    "name": "airi",
+    "language": "TypeScript",
+    "stars": 49724,
+    "topics": [
+      "ai-vtuber",
+      "live2d",
+      "neuro-sama",
+      "neurosama",
+      "vrm"
+    ],
+    "score": 95.85
   }
 ]
