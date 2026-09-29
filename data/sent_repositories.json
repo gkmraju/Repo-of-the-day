@@ -1445,5 +1445,20 @@
       "vrm"
     ],
     "score": 95.85
+  },
+  {
+    "full_name": "vectorize-io/hindsight",
+    "url": "https://github.com/vectorize-io/hindsight",
+    "posted_at": "2026-09-29T20:08:54.422042+00:00",
+    "name": "hindsight",
+    "language": "Python",
+    "stars": 42684,
+    "topics": [
+      "agentic-ai",
+      "memory",
+      "agents",
+      "ai-memory"
+    ],
+    "score": 98.33
   }
 ]
