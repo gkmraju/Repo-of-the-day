@@ -1460,5 +1460,21 @@
       "ai-memory"
     ],
     "score": 98.33
+  },
+  {
+    "full_name": "LibreTranslate/LibreTranslate",
+    "url": "https://github.com/LibreTranslate/LibreTranslate",
+    "posted_at": "2026-09-30T20:15:06.025658+00:00",
+    "name": "LibreTranslate",
+    "language": "Python",
+    "stars": 16957,
+    "topics": [
+      "translation",
+      "translate",
+      "api",
+      "machine",
+      "translator"
+    ],
+    "score": 89.87
   }
 ]
