@@ -1476,5 +1476,21 @@
       "translator"
     ],
     "score": 89.87
+  },
+  {
+    "full_name": "sgl-project/sglang",
+    "url": "https://github.com/sgl-project/sglang",
+    "posted_at": "2026-10-01T20:29:02.524646+00:00",
+    "name": "sglang",
+    "language": "Python",
+    "stars": 36700,
+    "topics": [
+      "cuda",
+      "inference",
+      "llama",
+      "llm",
+      "moe"
+    ],
+    "score": 94.41
   }
 ]
