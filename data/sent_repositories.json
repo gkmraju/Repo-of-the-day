@@ -1492,5 +1492,21 @@
       "moe"
     ],
     "score": 94.41
+  },
+  {
+    "full_name": "junegunn/fzf",
+    "url": "https://github.com/junegunn/fzf",
+    "posted_at": "2026-10-02T20:05:24.781986+00:00",
+    "name": "fzf",
+    "language": "Go",
+    "stars": 83358,
+    "topics": [
+      "fzf",
+      "go",
+      "bash",
+      "zsh",
+      "fish"
+    ],
+    "score": 98.25
   }
 ]
