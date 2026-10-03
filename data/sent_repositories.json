@@ -1508,5 +1508,21 @@
       "fish"
     ],
     "score": 98.25
+  },
+  {
+    "full_name": "agno-agi/agno",
+    "url": "https://github.com/agno-agi/agno",
+    "posted_at": "2026-10-03T18:49:12.307173+00:00",
+    "name": "agno",
+    "language": "Python",
+    "stars": 42530,
+    "topics": [
+      "developer-tools",
+      "python",
+      "agents",
+      "ai",
+      "ai-agents"
+    ],
+    "score": 94.61
   }
 ]
