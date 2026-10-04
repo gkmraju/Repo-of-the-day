@@ -1524,5 +1524,21 @@
       "ai-agents"
     ],
     "score": 94.61
+  },
+  {
+    "full_name": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "posted_at": "2026-10-04T18:45:57.470969+00:00",
+    "name": "claude-mem",
+    "language": "TypeScript",
+    "stars": 96025,
+    "topics": [
+      "ai",
+      "ai-agents",
+      "ai-memory",
+      "anthropic",
+      "artificial-intelligence"
+    ],
+    "score": 96.84
   }
 ]
