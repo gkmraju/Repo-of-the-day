@@ -1540,5 +1540,21 @@
       "artificial-intelligence"
     ],
     "score": 96.84
+  },
+  {
+    "full_name": "Graphify-Labs/graphify",
+    "url": "https://github.com/Graphify-Labs/graphify",
+    "posted_at": "2026-10-05T22:10:01.977093+00:00",
+    "name": "graphify",
+    "language": "Python",
+    "stars": 124050,
+    "topics": [
+      "claude-code",
+      "graphrag",
+      "knowledge-graph",
+      "codex",
+      "openclaw"
+    ],
+    "score": 95.37
   }
 ]
