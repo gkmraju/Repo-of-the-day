@@ -1556,5 +1556,19 @@
       "openclaw"
     ],
     "score": 95.37
+  },
+  {
+    "full_name": "sveltejs/svelte",
+    "url": "https://github.com/sveltejs/svelte",
+    "posted_at": "2026-10-06T20:30:37.882966+00:00",
+    "name": "svelte",
+    "language": "JavaScript",
+    "stars": 88351,
+    "topics": [
+      "template",
+      "ui",
+      "compiler"
+    ],
+    "score": 89.77
   }
 ]
