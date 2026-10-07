@@ -1570,5 +1570,21 @@
       "compiler"
     ],
     "score": 89.77
+  },
+  {
+    "full_name": "eslint/eslint",
+    "url": "https://github.com/eslint/eslint",
+    "posted_at": "2026-10-07T20:45:46.369360+00:00",
+    "name": "eslint",
+    "language": "JavaScript",
+    "stars": 27624,
+    "topics": [
+      "eslint",
+      "javascript",
+      "ecmascript",
+      "static-code-analysis",
+      "linter"
+    ],
+    "score": 98.13
   }
 ]
