@@ -1586,5 +1586,21 @@
       "linter"
     ],
     "score": 98.13
+  },
+  {
+    "full_name": "psf/black",
+    "url": "https://github.com/psf/black",
+    "posted_at": "2026-10-08T20:48:58.728925+00:00",
+    "name": "black",
+    "language": "Python",
+    "stars": 41879,
+    "topics": [
+      "python",
+      "code",
+      "formatter",
+      "codeformatter",
+      "gofmt"
+    ],
+    "score": 96.54
   }
 ]
