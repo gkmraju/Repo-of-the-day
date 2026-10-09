@@ -1602,5 +1602,21 @@
       "gofmt"
     ],
     "score": 96.54
+  },
+  {
+    "full_name": "headroomlabs-ai/headroom",
+    "url": "https://github.com/headroomlabs-ai/headroom",
+    "posted_at": "2026-10-09T20:14:44.926076+00:00",
+    "name": "headroom",
+    "language": "Python",
+    "stars": 74828,
+    "topics": [
+      "agent",
+      "ai",
+      "anthropic",
+      "compression",
+      "context-engineering"
+    ],
+    "score": 97.41
   }
 ]
