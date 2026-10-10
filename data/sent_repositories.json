@@ -1618,5 +1618,21 @@
       "context-engineering"
     ],
     "score": 97.41
+  },
+  {
+    "full_name": "appwrite/appwrite",
+    "url": "https://github.com/appwrite/appwrite",
+    "posted_at": "2026-10-10T19:28:11.883328+00:00",
+    "name": "appwrite",
+    "language": "TypeScript",
+    "stars": 57623,
+    "topics": [
+      "appwrite",
+      "docker",
+      "backend-as-a-service",
+      "javascript",
+      "flutter"
+    ],
+    "score": 96.5
   }
 ]
