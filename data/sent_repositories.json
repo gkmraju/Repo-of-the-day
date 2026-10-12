@@ -1650,5 +1650,21 @@
       "backups"
     ],
     "score": 93.91
+  },
+  {
+    "full_name": "jaegertracing/jaeger",
+    "url": "https://github.com/jaegertracing/jaeger",
+    "posted_at": "2026-10-12T22:36:41.439579+00:00",
+    "name": "jaeger",
+    "language": "Go",
+    "stars": 23285,
+    "topics": [
+      "distributed-tracing",
+      "cncf",
+      "tracing",
+      "observability",
+      "jaeger"
+    ],
+    "score": 95.73
   }
 ]
