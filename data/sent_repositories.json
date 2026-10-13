@@ -1666,5 +1666,21 @@
       "jaeger"
     ],
     "score": 95.73
+  },
+  {
+    "full_name": "Twigpine/openclaude",
+    "url": "https://github.com/Twigpine/openclaude",
+    "posted_at": "2026-10-13T20:49:37.577083+00:00",
+    "name": "openclaude",
+    "language": "TypeScript",
+    "stars": 33827,
+    "topics": [
+      "ai",
+      "ai-agent",
+      "ai-tools",
+      "cli",
+      "coding"
+    ],
+    "score": 97.77
   }
 ]
