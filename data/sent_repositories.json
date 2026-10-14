@@ -1682,5 +1682,21 @@
       "coding"
     ],
     "score": 97.77
+  },
+  {
+    "full_name": "ChromeDevTools/chrome-devtools-mcp",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "posted_at": "2026-10-14T19:36:03.019700+00:00",
+    "name": "chrome-devtools-mcp",
+    "language": "TypeScript",
+    "stars": 53533,
+    "topics": [
+      "mcp-server",
+      "puppeteer",
+      "chrome-devtools",
+      "browser",
+      "chrome"
+    ],
+    "score": 93.23
   }
 ]
