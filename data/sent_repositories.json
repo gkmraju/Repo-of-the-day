@@ -1698,5 +1698,21 @@
       "chrome"
     ],
     "score": 93.23
+  },
+  {
+    "full_name": "n8n-io/n8n",
+    "url": "https://github.com/n8n-io/n8n",
+    "posted_at": "2026-10-15T19:21:18.622801+00:00",
+    "name": "n8n",
+    "language": "TypeScript",
+    "stars": 207502,
+    "topics": [
+      "automation",
+      "ipaas",
+      "n8n",
+      "workflow",
+      "typescript"
+    ],
+    "score": 93.67
   }
 ]
