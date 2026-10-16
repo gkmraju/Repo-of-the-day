@@ -1714,5 +1714,21 @@
       "typescript"
     ],
     "score": 93.67
+  },
+  {
+    "full_name": "rtk-ai/rtk",
+    "url": "https://github.com/rtk-ai/rtk",
+    "posted_at": "2026-10-16T18:56:24.483696+00:00",
+    "name": "rtk",
+    "language": "Rust",
+    "stars": 83615,
+    "topics": [
+      "agentic-coding",
+      "ai-coding",
+      "anthropic",
+      "claude-code",
+      "cli"
+    ],
+    "score": 93.53
   }
 ]
