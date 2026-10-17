@@ -1730,5 +1730,21 @@
       "cli"
     ],
     "score": 93.53
+  },
+  {
+    "full_name": "decolua/9router",
+    "url": "https://github.com/decolua/9router",
+    "posted_at": "2026-10-17T17:57:30.937200+00:00",
+    "name": "9router",
+    "language": "JavaScript",
+    "stars": 30960,
+    "topics": [
+      "claude-code",
+      "cursor",
+      "ai-agents",
+      "ai-gateway",
+      "anthropic"
+    ],
+    "score": 95.89
   }
 ]
