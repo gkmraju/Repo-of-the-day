@@ -1746,5 +1746,21 @@
       "anthropic"
     ],
     "score": 95.89
+  },
+  {
+    "full_name": "twentyhq/twenty",
+    "url": "https://github.com/twentyhq/twenty",
+    "posted_at": "2026-10-18T18:17:04.296995+00:00",
+    "name": "twenty",
+    "language": "TypeScript",
+    "stars": 58490,
+    "topics": [
+      "crm",
+      "customer",
+      "graphql",
+      "marketing",
+      "react"
+    ],
+    "score": 96.5
   }
 ]
