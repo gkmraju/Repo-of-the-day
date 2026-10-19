@@ -1762,5 +1762,21 @@
       "react"
     ],
     "score": 96.5
+  },
+  {
+    "full_name": "Comfy-Org/ComfyUI",
+    "url": "https://github.com/Comfy-Org/ComfyUI",
+    "posted_at": "2026-10-19T20:43:41.228175+00:00",
+    "name": "ComfyUI",
+    "language": "Python",
+    "stars": 139567,
+    "topics": [
+      "stable-diffusion",
+      "pytorch",
+      "ai",
+      "python",
+      "comfy"
+    ],
+    "score": 95.96
   }
 ]
