@@ -1778,5 +1778,21 @@
       "comfy"
     ],
     "score": 95.96
+  },
+  {
+    "full_name": "vllm-project/vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "posted_at": "2026-10-20T19:30:00.024528+00:00",
+    "name": "vllm",
+    "language": "Python",
+    "stars": 94377,
+    "topics": [
+      "gpt",
+      "llm",
+      "pytorch",
+      "model-serving",
+      "transformer"
+    ],
+    "score": 93.12
   }
 ]
