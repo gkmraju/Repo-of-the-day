@@ -1810,5 +1810,21 @@
       "golang"
     ],
     "score": 92.43
+  },
+  {
+    "full_name": "vitejs/vite",
+    "url": "https://github.com/vitejs/vite",
+    "posted_at": "2026-10-22T19:23:28.084672+00:00",
+    "name": "vite",
+    "language": "TypeScript",
+    "stars": 83456,
+    "topics": [
+      "vite",
+      "hmr",
+      "frontend",
+      "build-tool",
+      "dev-server"
+    ],
+    "score": 94.36
   }
 ]
