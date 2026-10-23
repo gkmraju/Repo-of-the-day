@@ -1826,5 +1826,21 @@
       "dev-server"
     ],
     "score": 94.36
+  },
+  {
+    "full_name": "prometheus/prometheus",
+    "url": "https://github.com/prometheus/prometheus",
+    "posted_at": "2026-10-23T19:27:21.912365+00:00",
+    "name": "prometheus",
+    "language": "Go",
+    "stars": 66717,
+    "topics": [
+      "monitoring",
+      "metrics",
+      "alerting",
+      "graphing",
+      "time-series"
+    ],
+    "score": 96.88
   }
 ]
