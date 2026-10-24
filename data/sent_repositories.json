@@ -1842,5 +1842,21 @@
       "time-series"
     ],
     "score": 96.88
+  },
+  {
+    "full_name": "crewAIInc/crewAI",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "posted_at": "2026-10-24T18:20:04.879631+00:00",
+    "name": "crewAI",
+    "language": "Python",
+    "stars": 60065,
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "llms",
+      "aiagentframework"
+    ],
+    "score": 99.5
   }
 ]
