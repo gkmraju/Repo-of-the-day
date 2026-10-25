@@ -1858,5 +1858,21 @@
       "aiagentframework"
     ],
     "score": 99.5
+  },
+  {
+    "full_name": "coollabsio/coolify",
+    "url": "https://github.com/coollabsio/coolify",
+    "posted_at": "2026-10-25T18:33:43.315426+00:00",
+    "name": "coolify",
+    "language": "PHP",
+    "stars": 64123,
+    "topics": [
+      "nodejs",
+      "mysql",
+      "php",
+      "docker",
+      "self-hosting"
+    ],
+    "score": 97.5
   }
 ]
