@@ -1874,5 +1874,21 @@
       "self-hosting"
     ],
     "score": 97.5
+  },
+  {
+    "full_name": "AstrBotDevs/AstrBot",
+    "url": "https://github.com/AstrBotDevs/AstrBot",
+    "posted_at": "2026-10-26T20:43:26.007666+00:00",
+    "name": "AstrBot",
+    "language": "Python",
+    "stars": 43810,
+    "topics": [
+      "ai",
+      "chatbot",
+      "chatgpt",
+      "openai",
+      "qqbot"
+    ],
+    "score": 98.19
   }
 ]
