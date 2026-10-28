@@ -1906,5 +1906,21 @@
       "rag"
     ],
     "score": 99.0
+  },
+  {
+    "full_name": "NVIDIA/SkillSpector",
+    "url": "https://github.com/NVIDIA/SkillSpector",
+    "posted_at": "2026-10-28T20:29:16.577018+00:00",
+    "name": "SkillSpector",
+    "language": "Python",
+    "stars": 23046,
+    "topics": [
+      "agent-security",
+      "agent-skills",
+      "agentic-ai",
+      "ai-security",
+      "claude-code"
+    ],
+    "score": 97.66
   }
 ]
