@@ -1922,5 +1922,21 @@
       "claude-code"
     ],
     "score": 97.66
+  },
+  {
+    "full_name": "docker/compose",
+    "url": "https://github.com/docker/compose",
+    "posted_at": "2026-10-29T20:27:46.802605+00:00",
+    "name": "compose",
+    "language": "Go",
+    "stars": 38521,
+    "topics": [
+      "docker",
+      "docker-compose",
+      "orchestration",
+      "go",
+      "golang"
+    ],
+    "score": 92.81
   }
 ]
