@@ -1938,5 +1938,21 @@
       "golang"
     ],
     "score": 92.81
+  },
+  {
+    "full_name": "NVIDIA-NeMo/Speech",
+    "url": "https://github.com/NVIDIA-NeMo/Speech",
+    "posted_at": "2026-10-30T20:03:12.040038+00:00",
+    "name": "Speech",
+    "language": "Python",
+    "stars": 18655,
+    "topics": [
+      "machine-translation",
+      "speaker-recognition",
+      "asr",
+      "tts",
+      "generative-ai"
+    ],
+    "score": 93.72
   }
 ]
