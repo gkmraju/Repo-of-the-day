@@ -1954,5 +1954,21 @@
       "generative-ai"
     ],
     "score": 93.72
+  },
+  {
+    "full_name": "DuarteSantos8/openGym",
+    "url": "https://github.com/DuarteSantos8/openGym",
+    "posted_at": "2026-10-31T19:28:20.440996+00:00",
+    "name": "openGym",
+    "language": "JavaScript",
+    "stars": 18246,
+    "topics": [
+      "bodyweight",
+      "docker",
+      "fitness",
+      "fitness-tracker",
+      "gym"
+    ],
+    "score": 95.17
   }
 ]
