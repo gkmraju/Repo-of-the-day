@@ -1970,5 +1970,21 @@
       "gym"
     ],
     "score": 95.17
+  },
+  {
+    "full_name": "oraios/serena",
+    "url": "https://github.com/oraios/serena",
+    "posted_at": "2026-11-01T19:53:09.769874+00:00",
+    "name": "serena",
+    "language": "Python",
+    "stars": 30987,
+    "topics": [
+      "agent",
+      "ai",
+      "vibe-coding",
+      "mcp-server",
+      "ai-coding"
+    ],
+    "score": 97.39
   }
 ]
