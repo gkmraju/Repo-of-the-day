@@ -1986,5 +1986,21 @@
       "ai-coding"
     ],
     "score": 97.39
+  },
+  {
+    "full_name": "cheaper-inference/OmniRoute",
+    "url": "https://github.com/cheaper-inference/OmniRoute",
+    "posted_at": "2026-11-02T23:14:13.628908+00:00",
+    "name": "OmniRoute",
+    "language": "TypeScript",
+    "stars": 83966,
+    "topics": [
+      "a2a",
+      "ai-agents",
+      "ai-gateway",
+      "anthropic",
+      "claude"
+    ],
+    "score": 100.0
   }
 ]
