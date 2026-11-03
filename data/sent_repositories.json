@@ -2002,5 +2002,21 @@
       "claude"
     ],
     "score": 100.0
+  },
+  {
+    "full_name": "floci-io/floci",
+    "url": "https://github.com/floci-io/floci",
+    "posted_at": "2026-11-03T21:14:25.151541+00:00",
+    "name": "floci",
+    "language": "Java",
+    "stars": 28631,
+    "topics": [
+      "aws",
+      "aws-emulation",
+      "localstack",
+      "devops",
+      "docker"
+    ],
+    "score": 98.21
   }
 ]
