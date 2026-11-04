@@ -2018,5 +2018,21 @@
       "docker"
     ],
     "score": 98.21
+  },
+  {
+    "full_name": "mermaid-js/mermaid",
+    "url": "https://github.com/mermaid-js/mermaid",
+    "posted_at": "2026-11-04T21:27:29.468234+00:00",
+    "name": "mermaid",
+    "language": "TypeScript",
+    "stars": 91014,
+    "topics": [
+      "documentation",
+      "flowchart",
+      "javascript",
+      "typescript",
+      "uml-diagrams"
+    ],
+    "score": 97.02
   }
 ]
