@@ -2034,5 +2034,19 @@
       "uml-diagrams"
     ],
     "score": 97.02
+  },
+  {
+    "full_name": "Leaflet/Leaflet",
+    "url": "https://github.com/Leaflet/Leaflet",
+    "posted_at": "2026-11-05T21:35:04.481697+00:00",
+    "name": "Leaflet",
+    "language": "JavaScript",
+    "stars": 45856,
+    "topics": [
+      "javascript",
+      "leaflet",
+      "maps"
+    ],
+    "score": 90.84
   }
 ]
