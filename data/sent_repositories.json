@@ -2048,5 +2048,21 @@
       "maps"
     ],
     "score": 90.84
+  },
+  {
+    "full_name": "etcd-io/etcd",
+    "url": "https://github.com/etcd-io/etcd",
+    "posted_at": "2026-11-06T21:02:29.278938+00:00",
+    "name": "etcd",
+    "language": "Go",
+    "stars": 52568,
+    "topics": [
+      "etcd",
+      "raft",
+      "distributed-systems",
+      "kubernetes",
+      "go"
+    ],
+    "score": 97.0
   }
 ]
