@@ -2064,5 +2064,21 @@
       "go"
     ],
     "score": 97.0
+  },
+  {
+    "full_name": "astral-sh/ruff",
+    "url": "https://github.com/astral-sh/ruff",
+    "posted_at": "2026-11-07T19:34:54.877205+00:00",
+    "name": "ruff",
+    "language": "Rust",
+    "stars": 50921,
+    "topics": [
+      "linter",
+      "pep8",
+      "python",
+      "python3",
+      "rust"
+    ],
+    "score": 99.0
   }
 ]
