@@ -2080,5 +2080,21 @@
       "rust"
     ],
     "score": 99.0
+  },
+  {
+    "full_name": "lobehub/lobehub",
+    "url": "https://github.com/lobehub/lobehub",
+    "posted_at": "2026-11-08T19:53:55.328185+00:00",
+    "name": "lobehub",
+    "language": "TypeScript",
+    "stars": 84416,
+    "topics": [
+      "agent",
+      "mcp",
+      "agent-harness",
+      "agent-collaboration",
+      "skills"
+    ],
+    "score": 96.22
   }
 ]
