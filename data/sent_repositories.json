@@ -2096,5 +2096,21 @@
       "skills"
     ],
     "score": 96.22
+  },
+  {
+    "full_name": "trufflesecurity/trufflehog",
+    "url": "https://github.com/trufflesecurity/trufflehog",
+    "posted_at": "2026-11-09T23:53:09.366099+00:00",
+    "name": "trufflehog",
+    "language": "Go",
+    "stars": 29098,
+    "topics": [
+      "secret",
+      "trufflehog",
+      "credentials",
+      "security",
+      "devsecops"
+    ],
+    "score": 98.25
   }
 ]
