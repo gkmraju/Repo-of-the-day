@@ -2112,5 +2112,21 @@
       "devsecops"
     ],
     "score": 98.25
+  },
+  {
+    "full_name": "Tencent/WeKnora",
+    "url": "https://github.com/Tencent/WeKnora",
+    "posted_at": "2026-11-10T21:26:58.096166+00:00",
+    "name": "WeKnora",
+    "language": "Go",
+    "stars": 37106,
+    "topics": [
+      "agent",
+      "agentic",
+      "ai",
+      "golang",
+      "llm"
+    ],
+    "score": 98.81
   }
 ]
