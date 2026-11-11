@@ -2128,5 +2128,21 @@
       "llm"
     ],
     "score": 98.81
+  },
+  {
+    "full_name": "saleor/saleor",
+    "url": "https://github.com/saleor/saleor",
+    "posted_at": "2026-11-11T22:10:01.731094+00:00",
+    "name": "saleor",
+    "language": "Python",
+    "stars": 23548,
+    "topics": [
+      "python",
+      "store",
+      "commerce",
+      "shop",
+      "ecommerce"
+    ],
+    "score": 97.56
   }
 ]
