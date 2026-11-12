@@ -2144,5 +2144,21 @@
       "ecommerce"
     ],
     "score": 97.56
+  },
+  {
+    "full_name": "axios/axios",
+    "url": "https://github.com/axios/axios",
+    "posted_at": "2026-11-12T21:57:16.182546+00:00",
+    "name": "axios",
+    "language": "JavaScript",
+    "stars": 109394,
+    "topics": [
+      "http-client",
+      "javascript",
+      "nodejs",
+      "promise",
+      "hacktoberfest"
+    ],
+    "score": 96.09
   }
 ]
