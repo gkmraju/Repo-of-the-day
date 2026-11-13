@@ -2160,5 +2160,21 @@
       "hacktoberfest"
     ],
     "score": 96.09
+  },
+  {
+    "full_name": "langchain-ai/langgraph",
+    "url": "https://github.com/langchain-ai/langgraph",
+    "posted_at": "2026-11-13T21:32:50.688055+00:00",
+    "name": "langgraph",
+    "language": "Python",
+    "stars": 44916,
+    "topics": [
+      "agents",
+      "ai",
+      "ai-agents",
+      "chatgpt",
+      "deepagents"
+    ],
+    "score": 93.29
   }
 ]
