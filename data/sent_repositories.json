@@ -2176,5 +2176,21 @@
       "deepagents"
     ],
     "score": 93.29
+  },
+  {
+    "full_name": "CherryHQ/cherry-studio",
+    "url": "https://github.com/CherryHQ/cherry-studio",
+    "posted_at": "2026-11-14T20:03:51.923924+00:00",
+    "name": "cherry-studio",
+    "language": "TypeScript",
+    "stars": 53515,
+    "topics": [
+      "ai-agents",
+      "agent-workspace",
+      "agentic-workspace",
+      "ai-models",
+      "ai-productivity"
+    ],
+    "score": 95.0
   }
 ]
