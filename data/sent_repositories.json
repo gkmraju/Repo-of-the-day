@@ -2192,5 +2192,21 @@
       "ai-productivity"
     ],
     "score": 95.0
+  },
+  {
+    "full_name": "ManimCommunity/manim",
+    "url": "https://github.com/ManimCommunity/manim",
+    "posted_at": "2026-11-15T20:31:41.143451+00:00",
+    "name": "manim",
+    "language": "Python",
+    "stars": 42576,
+    "topics": [
+      "math",
+      "python",
+      "manim",
+      "animations",
+      "hacktoberfest"
+    ],
+    "score": 97.98
   }
 ]
