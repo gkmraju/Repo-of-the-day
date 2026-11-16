@@ -2208,5 +2208,21 @@
       "hacktoberfest"
     ],
     "score": 97.98
+  },
+  {
+    "full_name": "ag-ui-protocol/ag-ui",
+    "url": "https://github.com/ag-ui-protocol/ag-ui",
+    "posted_at": "2026-11-16T23:51:25.005372+00:00",
+    "name": "ag-ui",
+    "language": "TypeScript",
+    "stars": 18933,
+    "topics": [
+      "ag-ui-protocol",
+      "agent-frontend",
+      "agent-ui",
+      "agentic-workflow",
+      "ai-agents"
+    ],
+    "score": 96.26
   }
 ]
