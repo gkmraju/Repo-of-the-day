@@ -2224,5 +2224,21 @@
       "ai-agents"
     ],
     "score": 96.26
+  },
+  {
+    "full_name": "farion1231/cc-switch",
+    "url": "https://github.com/farion1231/cc-switch",
+    "posted_at": "2026-11-17T23:06:07.276471+00:00",
+    "name": "cc-switch",
+    "language": "Rust",
+    "stars": 155204,
+    "topics": [
+      "ai-tools",
+      "claude-code",
+      "desktop-app",
+      "open-source",
+      "rust"
+    ],
+    "score": 96.27
   }
 ]
