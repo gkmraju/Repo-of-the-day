@@ -2253,5 +2253,21 @@
       "mcp"
     ],
     "score": 87.14
+  },
+  {
+    "full_name": "agentscope-ai/agentscope",
+    "url": "https://github.com/agentscope-ai/agentscope",
+    "posted_at": "2026-11-19T22:46:48.992060+00:00",
+    "name": "agentscope",
+    "language": "Python",
+    "stars": 36306,
+    "topics": [
+      "agent",
+      "chatbot",
+      "large-language-models",
+      "llm",
+      "llm-agent"
+    ],
+    "score": 96.26
   }
 ]
