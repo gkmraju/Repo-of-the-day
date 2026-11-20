@@ -2269,5 +2269,21 @@
       "llm-agent"
     ],
     "score": 96.26
+  },
+  {
+    "full_name": "toeverything/AFFiNE",
+    "url": "https://github.com/toeverything/AFFiNE",
+    "posted_at": "2026-11-20T22:21:55.821635+00:00",
+    "name": "AFFiNE",
+    "language": "TypeScript",
+    "stars": 75745,
+    "topics": [
+      "editor",
+      "crdt",
+      "knowledge-base",
+      "markdown",
+      "miro"
+    ],
+    "score": 95.55
   }
 ]
