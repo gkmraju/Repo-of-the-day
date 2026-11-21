@@ -2285,5 +2285,21 @@
       "miro"
     ],
     "score": 95.55
+  },
+  {
+    "full_name": "nginx/nginx",
+    "url": "https://github.com/nginx/nginx",
+    "posted_at": "2026-11-21T21:02:19.959478+00:00",
+    "name": "nginx",
+    "language": "C",
+    "stars": 32709,
+    "topics": [
+      "content-cache",
+      "load-balancer",
+      "reverse-proxy",
+      "web-server",
+      "http"
+    ],
+    "score": 97.16
   }
 ]
