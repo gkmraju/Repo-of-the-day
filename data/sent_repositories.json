@@ -2301,5 +2301,21 @@
       "http"
     ],
     "score": 97.16
+  },
+  {
+    "full_name": "Tracer-Cloud/opensre",
+    "url": "https://github.com/Tracer-Cloud/opensre",
+    "posted_at": "2026-11-22T21:11:48.646460+00:00",
+    "name": "opensre",
+    "language": "Python",
+    "stars": 14353,
+    "topics": [
+      "alerting",
+      "datadog",
+      "grafana",
+      "observability",
+      "remediation"
+    ],
+    "score": 92.62
   }
 ]
