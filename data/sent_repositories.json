@@ -2317,5 +2317,21 @@
       "remediation"
     ],
     "score": 92.62
+  },
+  {
+    "full_name": "ocornut/imgui",
+    "url": "https://github.com/ocornut/imgui",
+    "posted_at": "2026-11-24T02:30:57.575296+00:00",
+    "name": "imgui",
+    "language": "C++",
+    "stars": 77221,
+    "topics": [
+      "gui",
+      "gamedev",
+      "tools",
+      "ui",
+      "toolkit"
+    ],
+    "score": 95.5
   }
 ]
