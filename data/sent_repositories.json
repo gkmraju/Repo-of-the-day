@@ -2349,5 +2349,21 @@
       "data-analysis"
     ],
     "score": 93.07
+  },
+  {
+    "full_name": "apache/airflow",
+    "url": "https://github.com/apache/airflow",
+    "posted_at": "2026-11-25T23:47:06.678734+00:00",
+    "name": "airflow",
+    "language": "Python",
+    "stars": 47674,
+    "topics": [
+      "airflow",
+      "apache",
+      "apache-airflow",
+      "python",
+      "scheduler"
+    ],
+    "score": 94.89
   }
 ]
