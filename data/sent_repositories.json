@@ -2333,5 +2333,21 @@
       "toolkit"
     ],
     "score": 95.5
+  },
+  {
+    "full_name": "scikit-learn/scikit-learn",
+    "url": "https://github.com/scikit-learn/scikit-learn",
+    "posted_at": "2026-11-25T00:02:56.757121+00:00",
+    "name": "scikit-learn",
+    "language": "Python",
+    "stars": 68318,
+    "topics": [
+      "machine-learning",
+      "python",
+      "statistics",
+      "data-science",
+      "data-analysis"
+    ],
+    "score": 93.07
   }
 ]
