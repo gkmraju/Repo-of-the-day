@@ -2381,5 +2381,21 @@
       "caching"
     ],
     "score": 95.4
+  },
+  {
+    "full_name": "fastapi/fastapi",
+    "url": "https://github.com/fastapi/fastapi",
+    "posted_at": "2026-11-27T23:40:51.226964+00:00",
+    "name": "fastapi",
+    "language": "Python",
+    "stars": 105052,
+    "topics": [
+      "python",
+      "json",
+      "openapi",
+      "api",
+      "framework"
+    ],
+    "score": 93.85
   }
 ]
