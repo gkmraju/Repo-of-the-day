@@ -2365,5 +2365,21 @@
       "scheduler"
     ],
     "score": 94.89
+  },
+  {
+    "full_name": "redis/redis",
+    "url": "https://github.com/redis/redis",
+    "posted_at": "2026-11-27T00:00:01.677688+00:00",
+    "name": "redis",
+    "language": "C",
+    "stars": 77785,
+    "topics": [
+      "database",
+      "key-value",
+      "nosql",
+      "redis",
+      "caching"
+    ],
+    "score": 95.4
   }
 ]
